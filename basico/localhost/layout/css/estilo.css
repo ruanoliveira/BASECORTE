@@ -1,0 +1,646 @@
+@media screen {
+	/*
+=====================================================
+	DEFINIÇÕES GERAIS DO SITE
+=====================================================
+*/
+html, body {font-family: arial;font-size: 14px;line-height: 1.4em;height: 100%;color: #484848;}
+p{	color: #333; font-size: 14px; letter-spacing:-0.02em;line-height:1.45em; }
+ul li {line-height: 1.5em;padding-left: 18px;background: url('/layout/images/icon-ul.gif') no-repeat 0px 4px;display: block;}
+
+/*
+=====================================================
+	LINKS
+=====================================================
+*/
+
+a {color: #FF6511;text-decoration: none;}
+a:focus {color: #FF6511;text-decoration: none;}
+a:visited {color: #999999;text-decoration: none;}
+a:hover {color: #FF6511;text-decoration: underline;}
+
+/*
+=====================================================
+ TÍTULOS PADRÕES
+=====================================================
+*/
+
+h1, h2, h3, h4, h5, h6 {font-family: 'Arial' !important;margin-bottom: 10px;color: #666;}
+h1, h2, h3, h4 {font-weight: bold;}
+h5, h6 {font-weight: normal;}
+h1 {font-size: 28px;line-height: 32px;}
+h2 {font-size: 24px;line-height: 28px;}
+h3 {font-size: 20px;line-height: 24px;}
+h4 {font-size: 18px;line-height: 22px;}
+h5 {font-size: 16px;line-height: 20px;}
+h6 {font-size: 11px;line-height: 13px;}
+
+/*
+=====================================================
+	TÍTULO DAS PÁGINAS INTERNAS
+=====================================================
+*/
+
+#internal-title {font-size: 28px;line-height: 32px;color: #666;font-weight: bold;margin-bottom: 20px;}
+
+/*
+===================================================== 
+	TÍTULOS COM LINKS
+=====================================================
+*/
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, h1 a:focus, h2 a:focus, h3 a:focus, h4 a:focus, h5 a:focus, h6 a:focus {color: #666;text-decoration: none;}
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {color: #999;text-decoration: none;}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {color: #999;border-bottom: 2px solid #999;text-decoration: none;}
+
+/*
+=====================================================
+	BUTTONS
+=====================================================
+*/
+
+button span {}
+button img {}
+button .enable_icon, a.button .enable_icon {}
+a.button span {}
+a.button, button {background: url('/layout/images/but-sdoor-left.gif') no-repeat;}
+a.button span, button span {background: url('/layout/images/but-sdoor-right.gif') no-repeat right;color: #FFF;}
+a.button:hover, button:hover, a.sel {background: url('/layout/images/but-sdoor-left-over.gif') no-repeat;}
+a.button:hover span, button:hover span, a.sel span {background: url('/layout/images/but-sdoor-right-over.gif') no-repeat right;color: #FFF;}
+a.button:active, button:active {background: url('/layout/images/but-sdoor-left-hit.gif') no-repeat;}
+a.button:active span, button:active span {background: url('/layout/images/but-sdoor-right-hit.gif') no-repeat right;}
+a.button img {}
+*:first-child+ html button img {}
+* html button img {}
+
+/* 
+=====================================================
+	FORMS
+=====================================================
+*/
+
+.form .large {width: 680px;}
+.form .medium {width: 340px;}
+.form .small {width: 170px;}
+
+/*  
+=====================================================
+ TABLES
+=====================================================
+*/
+
+table {}
+table td {}
+thead {}
+thead th, thead td {background: #999 !important;border: 1px solid #CCC;color: #FFF;padding-left: 10px;line-height: 40px;text-align: left;font-size: 18px;font-weight: normal;}
+th {}
+th, td {}
+thead td {}
+tbody td {border: 1px solid #CCC;color: #999;padding-left: 10px;line-height: 30px;font-size: 14px;font-weight: normal;}
+tr.impar td {}
+tfoot {}
+caption {}
+
+/*
+=====================================================
+	BREADCRUMBS
+=====================================================	 
+*/
+
+#breadcrumbs {font: 11px arial;color: #FF6511;margin-top: 10px;padding-bottom: 10px;margin-bottom: 40px;border-bottom: 1px solid #dfdfdf;font-weight: bold;}
+#breadcrumbs div {float: left;}
+#breadcrumbs a, #breadcrumbs a:visited {font-weight: normal;color: #999;}
+#breadcrumbs .breadcrumb {float: left;padding-right: 3px;color: #999;}
+#breadcrumbs .breadcrumb_current {float: left;}
+
+
+/*
+=====================================================
+	CSS DAS PÁGINAS
+=====================================================
+*/
+
+#page-wrapper {background: url('/layout/images/bg-fundo.png') repeat-x top;min-height: 100% !important;position: relative;}
+#page-wrapper-interna {background: url('/layout/images/bg-fundo.png') repeat-x top;min-height: 100% !important;position: relative;}
+#page-wrapper2 {width: 100%;height: 100%;position: absolute;bottom: 0px;z-index: -10;background: url('/layout/images/bg-fundo-bottom.png') repeat-x bottom;}
+#page-container {width: 960px;margin-left: auto;margin-right: auto;}
+#page-block {}
+#content-wrapper {padding-top: 20px;height: 100%;padding-bottom: 200px;}
+
+/* 
+=====================================================
+	CABEÇALHO
+=====================================================
+*/
+
+#header-wrapper {width: 960px;height: 180px;position: relative;}
+#header-wrapper-interna {width: 960px;height: 180px;position: relative;}
+#header {padding-top: 40px;}
+#logo {width: 160px;height: 60px;position: absolute;left: 0px;top: 40px;}
+#banner-wrapper {background: #FFF;margin-top: 20px;}
+
+/* 
+=====================================================
+	BUSCA
+=====================================================
+*/
+
+#search {width: 300px;height: 32px;background: #FFF;border: 1px solid #CCC;position: absolute;right: 0px;top: 50px;}
+#search .form input {border: none;background: none;width: 200px !important;height: 20px;padding-top: 6px;padding-left: 25px;}
+#search img {padding-top: 8px;position: absolute;left: 5px;}
+#imgbusca {width: 62px;height: 35px;display: block;position: absolute;top: -10px;right: 0px;cursor: pointer !important;}
+
+/* 
+=====================================================
+	MENU PRINCIPAL
+=====================================================
+*/
+
+#caixa-menu {width: 960px;position: absolute;top: 135px;}
+#menu {width: 960px;height: 45px;float: right;overflow: hidden;position: relative;}
+#menu ul {float: left;}
+#menu ul, #menu li {padding: 0px;margin: 0px;background: none;}
+#menu li {display: inline;}
+#menu a, #menu a:hover, #sub-menu a, #sub-menu a:hover {text-decoration: none;}
+#menu li a {float: left;display: block;height: 45px;font-weight: normal;font-size: 14px;font-family: 'Arial' !important;line-height: 45px;margin-left: 2px;padding-left: 20px;padding-right: 20px;color: #FFF;text-decoration: none;text-transform: none;}
+#menu li a:hover {height: 45px;text-decoration: none;margin-right: -1px;}
+#menu li.first a:hover {height: 45px;text-decoration: none;margin-right: -1px;}
+#menu li.selected a.active {height: 45px;}
+#menu li.selected a:hover {margin-right: 0px;}
+#menu li a:hover, #menu li.selected a.active {color: #FFF;text-decoration: none;border-top: 1px solid #666;border-left: 1px solid #666;border-right: 1px solid #666;border-bottom: none;padding-left: 19px !important;line-height: 43px !important;background-color: #FF6511;background: url('/layout/images/bg-menu.png');background-repeat: repeat-x;background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FF6511), to(#FF8848));background: -webkit-linear-gradient(top, #FF8848, #FF6511);background: -moz-linear-gradient(top, #FF8848, #FF6511);background: -ms-linear-gradient(top, #FF8848, #FF6511);background: -o-linear-gradient(top, #FF8848, #FF6511);}
+#menu .last a {border: none;}
+
+/* 
+=====================================================
+	MENU LATERAL
+=====================================================
+*/
+
+#sidebar-menu {width: 240px;}
+#sidebar-menu ul, #sidebar-menu li {padding: 0px;margin: 0px;background: none;}
+#sidebar-menu ul {padding: 0px;margin: 0px;background: none;border: 1px solid #dfdfdf;margin-bottom: 30px;}
+#sidebar-menu ul ul, #sidebar-menu ul ul ul, #sidebar-menu ul ul ul ul {padding: 0px;margin: 0px;background: none;padding-top: 0px;padding-bottom: 0px;margin-bottom: 0px;border: none;}
+#sidebar-menu {width: 240px;margin-left: auto;margin-right: auto;}
+#sidebar-menu li {display: inline;}
+#sidebar-menu li a {display: block;width: 100%;line-height: 18px;text-decoration: none;color: #666;background: #FFFFFF;font: normal 14px arial;border-bottom: 1px solid #dfdfdf;}
+#sidebar-menu li.last a {border-bottom: none;}
+#sidebar-menu li a.active {color: #FF6511;background: #FFFFFF;}
+#sidebar-menu li a:hover {color: #FF6511;background: #eaeaea;}
+#sidebar-menu li a:hover span {}
+#sidebar-menu li a span {display: block;padding: 10px 15px;line-height: 20px;}
+#sidebar-menu li li a {margin-top: -1px;font: normal 12px arial;border-bottom: none;}
+#sidebar-menu li li a span {display: block;padding: 0px 15px;line-height: 30px;}
+#sidebar-menu ul ul {border-bottom: 1px solid #dfdfdf;padding-bottom: 10px;}
+#sidebar-menu li li a:hover {color: #666;background: #FFF;text-decoration: underline;}
+#sidebar-menu li li a span {background: url('/layout/images/smenu-n.gif') no-repeat 15px 0px;padding-left: 30px;}
+#sidebar-menu li li li a span {background: url('/layout/images/smenu-n.gif') no-repeat 20px 0px;padding-left: 35px;}
+#sidebar-menu li li li li a span {background: url('/layout/images/smenu-n.gif') no-repeat 25px 0px;padding-left: 40px;}
+#sidebar-menu li li a:hover span {background: url('/layout/images/smenu-h.gif') no-repeat 15px 0px;}
+#sidebar-menu li li li a:hover span {background: url('/layout/images/smenu-h.gif') no-repeat 20px 0px;}
+#sidebar-menu li li li li a:hover span {background: url('/layout/images/smenu-h.gif') no-repeat 25px 0px;}
+#sidebar-menu li li a.active span {background: url('/layout/images/smenu-a.gif') no-repeat 15px 0px;}
+#sidebar-menu li li li a.active span {background: url('/layout/images/smenu-a.gif') no-repeat 20px 0px;}
+#sidebar-menu li li li li a.active span {background: url('/layout/images/smenu-a.gif') no-repeat 25px 0px;}
+
+/*
+=====================================================
+	ÁREAS EDITÁVEIS (CONTEÚDO E BARRA LATERAL)
+=====================================================
+*/
+
+#content {width: 680px;}
+#sidebar-block {width: 240px;}
+#barra-lateral {}
+.barra-lateral-exclusiva {}
+.barra-lateral-recursiva {}
+
+/* 
+=====================================================
+	RODAPÉ
+=====================================================
+*/
+
+#caixa-rodape {width: 960px;height: 100px !important;position: absolute !important;bottom: 0px !important;padding-bottom: 40px !important;border-top: 1px solid #CCC;margin-top: 30px;}
+#footer-wrapper {font: 11px arial;color: #666;padding-top: 20px;padding-bottom: 20px;}
+#footer-wrapper p {margin: 0px;}
+#footer {width: 720px;float: left;font: 11px arial;color: #666;line-height: 1.4em;}
+#footer a {color: #FF6511;text-decoration: none;}
+#footer a:hover {color: #FF6511;text-decoration: underline;}
+#rodape {font: 11px arial;color: #666;line-height: 1.4em;}
+#bimboo {width: 120px;height: 45px;float: right;}
+
+/*
+=====================================================
+	COMPONENTE CAIXAS
+=====================================================
+*/
+
+.caixa-padrao .bx_title, .caixa-padrao-com-borda .bx_title {height: 40px;border-bottom: 2px solid #FF6511;font: normal 20px arial;color: #666;text-transform: none;background-color: #f1f1f1;position: relative;line-height: 40px;}
+.caixa-padrao .bx_title {background: none;}
+.caixa-padrao-com-borda .bx_title {padding-left: 10px;}
+.caixa-padrao .bx_footer, .caixa-padrao-com-borda .bx_footer {text-align: right;border-top: 1px solid #CCC;font: normal 14px Arial;color: #000000;padding: 8px;padding-top: 10px;padding-bottom: 10px;background: none;}
+.caixa-padrao .bx_links, .caixa-padrao-com-borda .bx_links {font: normal 14px Arial;position: absolute;width: 200px;height: 20px;right: 10px;top: 10px;text-align: right;}
+.caixa-padrao-com-borda {border: 1px solid #CCC;}
+.caixa-padrao, .caixa-padrao-com-borda {margin-bottom: 20px;}
+
+/*
+=====================================================
+	COMPONENTE DIVISOR HORIZONTAL
+=====================================================
+*/
+
+.hr {border-style: dotted;}
+
+/* 
+=====================================================
+	COMPONENTE OLHO DA MATÉRIA
+=====================================================
+*/
+
+blockquote {margin-bottom: 20px;background: #FFF url('/layout/images/blockquote.gif') no-repeat;padding-left: 50px;}
+blockquote h1 {font: bold 20px Arial;color: #666;}
+blockquote h3 {font: normal 18px Arial;color: #999;}
+
+/* 
+=====================================================
+ COMPONENTE COMENTÁRIOS
+=====================================================
+*/
+
+/*COMENTÁRIOS ROTATIVO*/
+#comentario_rotativo {padding-top: 20px;position: relative;width: 100% !important;height: 100% !important;}
+#comentario_rotativo h4 {font-size: 20px;font-weight: normal;color: #666;border: none;margin-bottom: 20px;line-height: 24px;}
+#comentario_rotativo p {font-size: 16px;line-height: 20px;font-weight: bold;margin-left: 20px;margin-right: 20px;margin-bottom: 20px;position: relative;color: #666;}
+#comentario_rotativo h4.center {text-align: center;}
+#comentario_rotativo a:hover {text-decoration: none;border-bottom:none;}
+
+/*
+=====================================================
+	COMPONENTE NEWSLETTER
+=====================================================
+*/
+
+#newsletter input{width:98%;font:12px arial;color:#666;background:#FFF;padding-left:5px;padding-top:5px;padding-bottom:5px;}
+#newsletter h1{}
+.noprn input, .noprn textarea{}
+
+/*
+=====================================================
+	COMPONENTE TABS
+=====================================================
+*/
+
+.tabs_component {display: block;margin-bottom: 20px;}
+/* TAB HORIZONTAL */
+.tab_default ul.tabs-menu {margin: 0px;height: 41px;position: relative;}
+.tab_default ul.tabs-menu li {list-style-type: none;}
+.tab_default ul.tabs-menu li {float: left;display: block;padding-right: 15px;padding-left: 15px;margin-right: 0px;font-size: 18px;font-family: arial;background: #f1f1f1;color: #666;cursor: pointer;height: 38px;line-height: 38px;margin-top: 3px;border-top: 1px solid #CCC;border-right: 1px solid #CCC;border-left: 1px solid #CCC;box-sizing: border-box;-moz-box-sizing: border-box;}
+.tab_default ul.tabs-menu li.hover {background: #333333;color: #FFF;border-top: 1px solid #CCC;border-right: 1px solid #CCC;border-left: 1px solid #CCC;}
+.tab_default ul.tabs-menu li.active {margin-top: 0px;background: #FFF;color: #666;height: 42px;line-height: 42px;border-left: 1px solid #CCC;border-top: 1px solid #CCC;border-right: 1px solid #CCC;padding-right: 15px;padding-left: 15px;}
+.tab_default .tabs_content {padding: 10px;border: 1px solid #CCC;background: #FFF;box-sizing: border-box;-moz-box-sizing: border-box;}
+.tab_default .tabs_content p:last-child {margin: 0px;padding: 0px;}
+/* TAB VERTICAL */
+.tab_default_vertical ul.tabs-menu {margin: 0px;position: relative;float: left;width: 200px;box-sizing: border-box;-moz-box-sizing: border-box;margin-top: 10px;}
+.tab_default_vertical ul.tabs-menu li {list-style-type: none;}
+.tab_default_vertical ul.tabs-menu li {display: block;margin-right: 5px;background: #E3E3E3;border-left: 1px solid #E3E3E3;border-top: 1px solid #E3E3E3;border-bottom: 1px solid #E3E3E3;cursor: pointer;height: 32px;line-height: 32px;margin-top: 3px;box-sizing: border-box;-moz-box-sizing: border-box;padding-right: 10px;padding-left: 10px;}
+.tab_default_vertical ul.tabs-menu li.hover {background: #333333;color: #E0E0E0;}
+.tab_default_vertical ul.tabs-menu li.active {background: #FFF;color: #333;height: 32px;line-height: 32px;border-left: 1px solid #CCC;border-top: 1px solid #CCC;border-bottom: 1px solid #CCC;margin-right: 4px;}
+.tab_default_vertical .tabs_content {background: #FFF;box-sizing: border-box;-moz-box-sizing: border-box;margin-left: 195px;border: 1px solid #CCC;height: auto;padding: 15px;}
+.tab_default_vertical .tabs_content p:last-child {margin: 0px;padding: 0px;}
+
+/*  
+=====================================================
+	COMPONENTE COLUNAS
+=====================================================
+*/
+
+.columns .cl_f, .columns .cl_n { padding-right: 0px;padding-left: 0px;}
+.columns .cl_f .wrapper, .columns .cl_n .wrapper {}
+.columns .cl_l {}
+.columns .cl_l .wrapper {}
+
+/* 
+=====================================================
+ LISTAS E BLOCOS DE DESTAQUE
+=====================================================
+*/
+
+.lista-titulo-grande, .lista-titulo-grande a, .lista-titulo-grande a:hover, .lista-titulo-grande a:visited {font: bold 22px arial;line-height:24px;letter-spacing:-1px;color: #666;}
+.lista-titulo-grande a:hover {border-bottom: 2px solid #666;}
+.lista-titulo-medio, .lista-titulo-medio a, .lista-titulo-medio a:hover, .lista-titulo-medio a:visited {font: bold 16px arial;line-height:18px;letter-spacing:-1px;color: #666;}
+.lista-titulo-medio a:hover {border-bottom: 2px solid #666;}
+.bloco-titulo-grande, .bloco-titulo-grande a, .bloco-titulo-grande a:hover, .bloco-titulo-grande a:visited {font: bold 18px arial;line-height:20px;letter-spacing:-1px;color: #666;margin-bottom:5px;}
+.bloco-titulo-grande a:hover {border-bottom: 2px solid #666;}
+.bloco-titulo-medio, .bloco-titulo-medio a, .bloco-titulo-medio a:hover, .bloco-titulo-medio a:visited {font: bold 16px arial;line-height:18px;letter-spacing:-1px;color: #666;margin-bottom:5px;}
+.bloco-titulo-medio a:hover {border-bottom: 2px solid #666;}
+.bloco-titulo-pequeno, .bloco-titulo-pequeno a, .bloco-titulo-pequeno a:hover, .bloco-titulo-pequeno a:visited {font: normal 14px arial;color: #666;}
+.bloco-titulo-pequeno a:hover {text-decoration: underline;border-bottom: none;}
+.categoria, .data {font: bold 12px arial;color: #FF6511;margin-bottom:5px;}
+.resumo {font: normal 14px arial;color: #999;}
+.borda {background: none repeat scroll 0 0 #FFFFFF;border: 1px solid #CCC;border-radius: 0px 0px 0px 0px;box-shadow: 0 0 0px rgba(0, 0, 0, 0.3);padding: 5px;}
+
+/* 
+=====================================================
+	LISTA BLOG
+=====================================================
+*/
+
+.lista-blog {}
+.lista-blog .blog-button {float: right;width: 180px;}
+.blog-status-container {float: left;width: 480px;margin-top: -5px;}
+.blog-comments {background: url('/layout/images/icon-blog-comment.gif') no-repeat;width: 300px;font: normal 11px arial;margin-top: -10px;}
+.lista-blog .categoria {margin-bottom: 10px;}
+.lista-blog .resumo {}
+.lista-blog .borda {}
+
+/*
+=====================================================
+	LISTA 1 COLUNA
+=====================================================
+*/
+
+.lista-1-coluna {}
+.lista-1-coluna .lista-titulo-grande, .lista-1-coluna .lista-titulo-grande a, .lista-1-coluna .lista-titulo-grande a:visited {}
+.lista-1-coluna .categoria {}
+.lista-1-coluna .resumo {}
+.lista-1-coluna .borda {}
+
+/*
+=====================================================
+	LISTA 2 COLUNAS
+=====================================================
+*/
+
+.lista-2-colunas {height:425px;overflow:hidden;}
+.lista-2-colunas .lista-titulo-grande, .lista-2-colunas .lista-titulo-grande a, .lista-2-colunas .lista-titulo-grande a:visited {}
+.lista-2-colunas .categoria {}
+.lista-2-colunas .resumo {}
+.lista-2-colunas .borda {}
+
+/*
+=====================================================
+	LISTA 3 COLUNAS 660
+=====================================================
+*/
+
+.lista-3-colunas {height:325px;overflow:hidden;}
+.lista-3-colunas .lista-titulo-medio, .lista-3-colunas .lista-titulo-medio a, .lista-3-colunas .lista-titulo-medio a:visited {}
+.lista-3-colunas .categoria {}
+.lista-3-colunas .resumo {}
+.lista-3-colunas .borda {}
+
+/* 
+=====================================================
+	LISTA 3 COLUNAS 960
+=====================================================
+*/
+
+.lista-3-colunas-full {height:390px;overflow:hidden;}
+.lista-3-colunas-full .lista-titulo-grande, .lista-3-colunas-full .lista-titulo-grande a, .lista-3-colunas-full .lista-titulo-grande a:visited {}
+.lista-3-colunas-full .categoria {}
+.lista-3-colunas-full .resumo {}
+.lista-3-colunas-full .borda {}
+
+/* 
+=====================================================
+	LISTA 4 COLUNAS 960
+=====================================================
+*/
+
+.lista-4-colunas-full {height:340px;overflow:hidden;}
+.lista-4-colunas-full .lista-titulo-medio, .lista-4-colunas-full .lista-titulo-medio a, .lista-4-colunas-full .lista-titulo-medio a:visited {}
+.lista-4-colunas-full .categoria {}
+.lista-4-colunas-full .resumo {}
+.lista-4-colunas-full .borda {}
+
+/* 
+=====================================================
+	BLOCO  DINÂMICO VERTICAL GRANDE
+=====================================================
+*/
+
+.bloco-vertical-grande {}
+.bloco-vertical-grande .bloco-titulo-grande, .bloco-vertical-grande .bloco-titulo-grande a, .bloco-vertical-grande .bloco-titulo-grande a:visited {}
+.bloco-vertical-grande .categoria {}
+.bloco-vertical-grande .resumo {}
+.bloco-vertical-grande .borda {}
+
+/*
+=====================================================
+	BLOCO  DINÂMICO VERTICAL MÉDIO
+=====================================================
+*/
+
+.bloco-vertical-medio {}
+.bloco-vertical-medio .bloco-titulo-medio, .bloco-vertical-medio .bloco-titulo-medio a, .bloco-vertical-medio .bloco-titulo-medio a:visited {}
+.bloco-vertical-medio .categoria {}
+.bloco-vertical-medio .resumo {}
+.bloco-vertical-medio .borda {}
+
+/* 
+=====================================================
+	BLOCO  DINÂMICO HORIZONTAL GRANDE
+=====================================================
+*/
+
+.bloco-horizontal-grande {}
+.bloco-horizontal-grande .bloco-titulo-grande, .bloco-horizontal-grande .bloco-titulo-grande a, .bloco-horizontal-grande .bloco-titulo-grande a:visited {}
+.bloco-horizontal-grande .categoria {}
+.bloco-horizontal-grande .resumo {}
+.bloco-horizontal-grande .borda {}
+
+/* 
+=====================================================
+	BLOCO  DINÂMICO HORIZONTAL PEQUENO
+=====================================================
+*/
+
+.bloco-quadrado-pequeno {}
+.bloco-quadrado-pequeno .bloco-titulo-grande, .bloco-quadrado-pequeno .bloco-titulo-grande a, .bloco-quadrado-pequeno .bloco-titulo-grande a:visited {}
+.bloco-quadrado-pequeno .categoria {}
+.bloco-quadrado-pequeno .borda {}
+
+/* 
+=====================================================
+	BLOCO TEXTO TÍTULO COM DATA
+=====================================================
+*/
+
+.bloco-titulo-data {}
+.bloco-titulo-data .bloco-titulo-pequeno, .bloco-titulo-data .bloco-titulo-pequeno a, .bloco-titulo-data .bloco-titulo-pequeno a:visited {}
+.bloco-titulo-data .data {}
+
+/* 
+=====================================================
+	BLOCO TEXTO TÍTULO COM CATEGORIA
+=====================================================
+*/
+
+.bloco-titulo-categoria {}
+.bloco-titulo-categoria .bloco-titulo-pequeno, .bloco-titulo-categoria .bloco-titulo-pequeno a, .bloco-titulo-categoria .bloco-titulo-pequeno a:visited {}
+.bloco-titulo-categoria .categoria {}
+
+/* 
+=====================================================
+	BLOCO TEXTO TÍTULO COM MARCADOR
+=====================================================
+*/
+
+.bloco-titulo-marcador {}
+.bloco-titulo-marcador img{padding-top: 5px;}
+.bloco-titulo-marcador .bloco-titulo-pequeno, .bloco-titulo-marcador .bloco-titulo-pequeno a, .bloco-titulo-marcador .bloco-titulo-pequeno a:visited {}
+
+/*
+=====================================================
+	BLOCO SCROLL HORIZONTAL
+=====================================================
+*/
+
+/* Navbar */
+.sliderkit {height: 330px;}
+.sliderkit-nav {left: 0;bottom: 0;width: 100%;height: 330px;padding: 0;background: none;top: 0px;margin-left: 0px;position: absolute;}
+.sliderkit-nav-clip ul li {float: left;width: 227px;height: 280px;margin-right: 0px;text-align: left;background: none;}
+.sliderkit-nav-clip ul li > a img {display: block;width: 215px;height: 156px;margin: 0;opacity: 1;}
+.sliderkit-nav-clip ul li > a:hover {opacity: 1;}
+.sliderkit-nav-clip ul li p {font-size: 0.9em;}
+.sliderkit-nav-clip ul li .rlt-link-readmore:hover {text-decoration: underline;}
+.sliderkit ul li {padding-right: 21px;padding-left: 0px;}
+.sliderkit span {margin-bottom: 10px !important;}
+.sliderkit .sliderkit-count {position: absolute;top: 285px;right: 470px;z-index: 10;padding: 5px;color: #666;background: none;}
+.sliderkit-nav .sliderkit-nav-btn {position: absolute;top: 280px;}
+.sliderkit-nav .sliderkit-nav-btn span {display: none;}
+.sliderkit-nav .sliderkit-nav-btn a {display: block;z-index: 10;width: 40px;height: 41px;background: transparent url("/layout/images/arrows-h-btn.png") no-repeat 0 0;}
+.sliderkit-nav .sliderkit-nav-prev {left: 415px;}
+.sliderkit-nav .sliderkit-nav-next {right: 415px;}
+.sliderkit-nav .sliderkit-nav-prev a {background-position: 0 0;}
+.sliderkit-nav .sliderkit-nav-next a {background-position: 0 -41px;}
+.sliderkit-nav .sliderkit-nav-prev a:hover, .sliderkit-nav .sliderkit-nav-prev a:focus {background-position: -40px 0;}
+.sliderkit-nav .sliderkit-nav-next a:hover, .sliderkit-nav .sliderkit-nav-next a:focus {background-position: -40px -41px;}
+.sliderkit-nav .sliderkit-btn-disable a {cursor: default;}
+.sliderkit-nav .sliderkit-nav-prev.sliderkit-btn-disable a {background-position: -80px 0;}
+.sliderkit-nav .sliderkit-nav-next.sliderkit-btn-disable a {background-position: -80px -41px;}
+
+/*
+=====================================================
+	BLOCO SCROLL VERTICAL
+=====================================================
+*/
+
+li.scroll-vertical-li {padding-right: 0px !important;}
+.sliderkit-nav-clip ul li .scroll-vertical {float: left !important;width: 227px !important;margin-right: 0px !important;text-align: left !important;background: none;}
+.sliderkit-nav-clip ul li .scroll-vertical > a img {display: block;width: 215px;height: 156px;margin: 0;opacity: 1;}
+.sliderkit-nav-clip ul li .scroll-vertical > a:hover {opacity: 1;}
+.sliderkit-nav-clip ul li .scroll-vertical p {font-size: 0.9em;}
+.sliderkit-nav-clip ul li .scroll-vertical .rlt-link-readmore:hover {text-decoration: underline;}
+.sliderkit ul li .scroll-vertical {padding-right: 21px !important;padding-left: 0px;}
+.sliderkit-nav .scroll-vertical .sliderkit-nav-btn {position: absolute;top: 280px;}
+.sliderkit-nav .scroll-vertical .sliderkit-nav-btn span {display: none;}
+.sliderkit-nav .scroll-vertical .sliderkit-nav-btn a {display: block;z-index: 10;width: 40px;height: 41px;background: transparent url("/layout/images/arrows-h-btn2.png") no-repeat 0 0;}
+.sliderkit-nav .scroll-vertical .sliderkit-nav-prev {left: 415px;}
+.sliderkit-nav .scroll-vertical .sliderkit-nav-next {right: 415px;}
+.sliderkit-nav .scroll-vertical .sliderkit-nav-prev a {background-position: 0 0;}
+.sliderkit-nav .scroll-vertical .sliderkit-nav-next a {background-position: 0 -41px;}
+.sliderkit-nav .scroll-vertical .sliderkit-nav-prev a:hover, .sliderkit-nav .scroll-vertical .sliderkit-nav-prev a:focus {background-position: -40px 0;}
+.sliderkit-nav .scroll-vertical .sliderkit-nav-next a:hover, .sliderkit-nav .scroll-vertical .sliderkit-nav-next a:focus {background-position: -40px -41px;}
+.sliderkit-nav .scroll-vertical .sliderkit-btn-disable a {cursor: default;}
+.sliderkit-nav .scroll-vertical .sliderkit-nav-prev.sliderkit-btn-disable a {background-position: -80px 0;}
+.sliderkit-nav .scroll-vertical .sliderkit-nav-next.sliderkit-btn-disable a {background-position: -80px -41px;}
+
+/*
+=====================================================
+	BLOCO ROTATIVO PADRÃO
+=====================================================
+*/
+
+.bloco-rotativo-padrao {}
+.bloco-rotativo-padrao .bloco-titulo-grande, .bloco-rotativo-padrao .bloco-titulo-grande a, .bloco-rotativo-padrao .bloco-titulo-grande a:visited {height: 100%;}
+.bloco-rotativo-padrao .categoria {}
+.bloco-rotativo-padrao a:hover{border:none !important;}
+.tabs-rotativo-padrao {display: block;height: 25px;width: 100%;border-top: 1px solid #DBDBDB;}
+.tabs-rotativo-padrao .bt-esquerdo a {display: block;width: 80px;height: 25px;float: left;background: url('/layout/images/bt-esq2.gif') no-repeat top;}
+.tabs-rotativo-padrao .bt-esquerdo a:hover {background: url('/layout/images/bt-esq2-h.gif') no-repeat top;}
+.tabs-rotativo-padrao .bt-direito a {display: block;width: 80px;height: 25px;float: right;background: url('/layout/images/bt-dir2.gif') no-repeat top;}
+.tabs-rotativo-padrao .bt-direito a:hover {background: url('/layout/images/bt-dir2-h.gif') no-repeat top;}
+.tabs-rotativo-padrao a, .tabs-rotativo-padrao a:hover, .tabs-rotativo-padrao a:focus, .tabs-rotativo-padrao a.selected {text-decoration: none;border: none;outline: none;}
+.tabs-rotativo-padrao .contador {font: normal 11px arial !important;color: #999;}
+
+/*
+=====================================================
+	BLOCO ROTATIVO WIDE
+=====================================================
+*/
+
+.bloco-rotativo-wide {z-index: 0;position: relative}
+.bloco-rotativo-wide .bloco-titulo-grande, .bloco-rotativo-wide .bloco-titulo-grande a, .bloco-rotativo-wide .bloco-titulo-grande a:visited {color: #FFF;font-size: 20px;text-decoration: none;width: 90%;padding-left: 10px;}
+.bloco-rotativo-wide .categoria {padding-left: 10px;padding-top: 10px;color: #FF6511;}
+.bloco-rotativo-wide .titulo-wide {position: absolute;bottom: 0px;left: 0px;z-index: 10;display: block;margin-top: -110px;height: 80px;overflow: hidden;width: 100%;background: url('/layout/images/grey.png');background-color: rgba(0, 0, 0, 0.7);text-decoration:none;}
+.tabs-rotativo-wide {display: block;margin-top: 20px;height: 25px;width: 100%;border-top: 1px solid #CCC;}
+.tabs-rotativo-wide .bt-esquerdo a {display: block;top: 0px;width: 80px;height: 25px;float: left;background: url('/layout/images/bt-esq2.gif') no-repeat top;}
+.tabs-rotativo-wide .bt-esquerdo a:hover {top: 0px;width: 80px;height: 25px;background: url('/layout/images/bt-esq2-h.gif') no-repeat top;}
+.tabs-rotativo-wide .bt-direito a {display: block;top: 0px;width: 80px;height: 25px;float: right;background: url('/layout/images/bt-dir2.gif') no-repeat top;}
+.tabs-rotativo-wide .bt-direito a:hover {top: 0px;width: 80px;height: 25px;background: url('/layout/images/bt-dir2-h.gif') no-repeat top;}
+.tabs-rotativo-wide a, .tabs-rotativo-wide a:hover, .tabs-rotativo-wide a:focus, .tabs-rotativo-wide a.selected {text-decoration: none;border: none;outline: none;}
+.tabs-rotativo-wide .contador {font: normal 11px arial !important;display: block;color: #999;}
+
+}
+
+@media print {
+#area-dinamica,#data,#header-banner-content,#header-banner-top,#header-links-bottom,
+#search,#googleimg,#caixa-menu,#menu, #comentario_rotativo,
+#sidebar-block, .noprn,  #caixa-rodape, #breadcrumbs {display: none;}
+table, .hr,#page-container,#page-block,#content-wrapper, #logo,.caixa-padrao,
+.caixa-padrao-com-borda,.caixa-personalizada,.conteudo-relacionado,.conteudo-relacionado-lista,
+blockquote,.has_zoom, .hidden, .lista-titulo-grande,.lista-titulo-medio,.lista-titulo-pequeno,
+.bloco-titulo-grande,.bloco-titulo-medio,.bloco-titulo-pequeno,.data,.categoria, .resumo, .borda,
+.lista-blog, .blog-button,.blog-status-container, .blog-comments, .lista-1-coluna, .lista-2-colunas, 
+.lista-3-colunas, .lista-compacta-com-hora, .lista-compacta-com-data, .lista-mini-compacta-com-hora,
+.lista-mini-compacta-com-data, .lista-3-colunas-full, .lista-4-colunas-full, .bloco-vertical-grande,
+.bloco-vertical-medio,.bloco-vertical-pequeno,.bloco-horizontal-grande, .bloco-horizontal-medio, 
+.bloco-quadrado-categoria-titulo, .bloco-quadrado-foto-autor, .bloco-texto-grande, .bloco-texto-medio,
+.bloco-agenda, .bloco-texto-pequeno, .bloco-titulo-data, .bloco-titulo-categoria, .bloco-titulo-marcador,
+.sliderkit, .sliderkit-nav, .sliderkit-nav-clip, .sliderkit-count, .sliderkit-nav-btn, .sliderkit-nav-prev,
+.sliderkit-nav-next,  .sliderkit-btn-disable, .scroll-vertical-li, .scroll-vertical, .bloco-rotativo-padrao,
+.bt-esquerdo, .tabs-rotativo-padrao, .bt-direito, .contador, .bloco-rotativo-wide, .titulo-wide, .tabs-rotativo-wide,
+.rotativo-personalizado, .scroll-personalizado, #newsletter, .lista-links,.tabs_component,.tab_default,
+ul, li, ul li, .tabs_content, p, .tab_default_vertical,.columns, .tab_default_vertical ul li,
+.conteudo-relacionado-lista .lista-titulo-pequeno, .conteudo-relacionado-lista .lista-titulo-pequeno a,
+.conteudo-relacionado-lista .lista-titulo-pequeno a:visited, .conteudo-relacionado .bx_title,
+.conteudo-relacionado .bT,.caixa-padrao .bx_footer, .caixa-padrao-com-borda .bx_footer,.caixa-padrao .bx_title, 
+.caixa-padrao-com-borda .bx_title,.caixa-padrao .bx_links, .caixa-padrao-com-borda .bx_links, 
+.caixa-personalizada .bx,.caixa-personalizada .bx_title,
+.caixa-personalizada .bx_links, .caixa-personalizada .bx_footer,tbody td,th, td, thead th, thead td, thead, table td,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, h1 a:focus, h2 a:focus, h3 a:focus, h4 a:focus, h5 a:focus, h6 a:focus, 
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited, h1 a:hover, h2 a:hover, 
+h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover,h1, h2, h3, h4, h5, h6,a, a:hover,a:focus, a:visited,
+.lista-titulo-grande, .lista-titulo-grande a, .lista-titulo-grande a:hover, .lista-titulo-grande a:visited,
+.lista-titulo-medio, .lista-titulo-medio a, .lista-titulo-medio a:hover, .lista-titulo-medio a:visited,
+.lista-titulo-pequeno, .lista-titulo-pequeno a, .lista-titulo-pequeno a:hover, .lista-titulo-pequeno a:visited,
+.bloco-titulo-grande, .bloco-titulo-grande a, .bloco-titulo-grande a:hover, .bloco-titulo-grande a:visited,
+.bloco-titulo-medio, .bloco-titulo-medio a, .bloco-titulo-medio a:hover, .bloco-titulo-medio a:visited,
+.bloco-titulo-pequeno, .bloco-titulo-pequeno a, .bloco-titulo-pequeno a:hover, .bloco-titulo-pequeno a:visited,
+.lista-1-coluna .lista-titulo-grande, .lista-1-coluna .lista-titulo-grande a, .lista-1-coluna .lista-titulo-grande a:visited,
+.lista-2-colunas .lista-titulo-grande, .lista-2-colunas .lista-titulo-grande a, .lista-2-colunas .lista-titulo-grande a:visited,
+.lista-3-colunas .lista-titulo-medio, .lista-3-colunas .lista-titulo-medio a, .lista-3-colunas .lista-titulo-medio a:visited ,
+.lista-compacta-com-hora .lista-titulo-medio, .lista-compacta-com-hora .lista-titulo-medio a, .lista-compacta-com-hora .lista-titulo-medio a:visited,
+.lista-compacta-com-data .lista-titulo-medio, .lista-compacta-com-data .lista-titulo-medio a, .lista-compacta-com-data .lista-titulo-medio a:visited,
+.lista-mini-compacta-com-hora .lista-titulo-pequeno, .lista-mini-compacta-com-hora .lista-titulo-pequeno a, .lista-mini-compacta-com-hora .lista-titulo-pequeno a:visited ,
+.lista-mini-compacta-com-data .lista-titulo-pequeno, .lista-mini-compacta-com-data .lista-titulo-pequeno a, .lista-mini-compacta-com-data .lista-titulo-pequeno a:visited,
+.lista-3-colunas-full .lista-titulo-grande, .lista-3-colunas-full .lista-titulo-grande a, .lista-3-colunas-full .lista-titulo-grande a:visited,
+.lista-4-colunas-full .lista-titulo-medio, .lista-4-colunas-full .lista-titulo-medio a, .lista-4-colunas-full .lista-titulo-medio a:visited,
+.bloco-vertical-grande .bloco-titulo-grande, .bloco-vertical-grande .bloco-titulo-grande a, .bloco-vertical-grande .bloco-titulo-grande a:visited,
+.bloco-vertical-medio .bloco-titulo-medio, .bloco-vertical-medio .bloco-titulo-medio a, .bloco-vertical-medio .bloco-titulo-medio a:visited,
+.bloco-vertical-pequeno .bloco-titulo-pequeno, .bloco-vertical-pequeno .bloco-titulo-pequeno a, .bloco-vertical-pequeno .bloco-titulo-pequeno a:visited,
+.bloco-horizontal-grande .bloco-titulo-grande, .bloco-horizontal-grande .bloco-titulo-grande a, .bloco-horizontal-grande .bloco-titulo-grande a:visited,
+.bloco-horizontal-medio .bloco-titulo-medio, .bloco-horizontal-medio .bloco-titulo-medio a, .bloco-horizontal-medio .bloco-titulo-medio a:visited,
+.bloco-quadrado-categoria-titulo .bloco-titulo-medio, .bloco-quadrado-categoria-titulo .bloco-titulo-medio a, .bloco-quadrado-categoria-titulo .bloco-titulo-medio a:visited,
+.bloco-quadrado-foto-autor .bloco-titulo-medio, .bloco-quadrado-foto-autor .bloco-titulo-medio a, .bloco-quadrado-foto-autor .bloco-titulo-medio a:visited,
+.bloco-texto-grande .bloco-titulo-grande, .bloco-texto-grande .bloco-titulo-grande a, .bloco-texto-grande .bloco-titulo-grande a:visited,
+.bloco-texto-medio .bloco-titulo-medio, .bloco-texto-medio .bloco-titulo-medio a, .bloco-texto-medio .bloco-titulo-medio a:visited,
+.bloco-agenda .bloco-titulo-medio, .bloco-agenda .bloco-titulo-medio a, .bloco-agenda .bloco-titulo-medio a:visited,
+.bloco-texto-pequeno .bloco-titulo-pequeno, .bloco-texto-pequeno .bloco-titulo-pequeno a, .bloco-texto-pequeno .bloco-titulo-pequeno a:visited,
+.bloco-titulo-data .bloco-titulo-pequeno, .bloco-titulo-data .bloco-titulo-pequeno a, .bloco-titulo-data .bloco-titulo-pequeno a:visited,
+.bloco-titulo-categoria .bloco-titulo-pequeno, .bloco-titulo-categoria .bloco-titulo-pequeno a, .bloco-titulo-categoria .bloco-titulo-pequeno a:visited,
+.bloco-titulo-marcador .bloco-titulo-pequeno, .bloco-titulo-marcador .bloco-titulo-pequeno a, .bloco-titulo-marcador .bloco-titulo-pequeno a:visited{
+  display: block;
+}
+}

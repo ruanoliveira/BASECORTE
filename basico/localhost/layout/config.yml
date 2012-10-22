@@ -1,0 +1,78 @@
+layouts:
+  - name: Home Page
+    view: index
+  - name: Página com Barra Lateral à Direita
+    view: page
+  - name: Página com Barra Lateral à Esquerda
+    view: page-left
+  - name: Página sem Barra Lateral
+    view: page-inteira
+
+comments_default:
+  - name: Padrão
+    file: comments_default
+  - name: Visualização Rotativa
+    file: comments_rotate
+
+block_types:
+  - name: 1 Coluna
+    file: lista-grade-1-coluna
+    group: Listas Dinâmicas
+  - name: 2 Colunas
+    file: lista-grade-2-colunas
+    group: Listas Dinâmicas
+  - name: 3 Colunas
+    file: lista-grade-3-colunas
+    group: Listas Dinâmicas
+  - name: Blog
+    file: lista-blog
+    group: Listas Dinâmicas
+  - name: 3 Colunas (Página Inteira)
+    file: lista-grade-3-colunas-full
+    group: Listas Dinâmicas
+  - name: 4 Colunas (Página Inteira)
+    file: lista-grade-4-colunas-full
+    group: Listas Dinâmicas
+  - name: Imagem Vertical Grande
+    file: destaque-vertical-grande
+    group: Blocos Dinâmicos
+  - name: Imagem Vertical Medio
+    file: destaque-vertical-medio
+    group: Blocos Dinâmicos
+  - name: Imagem Horizontal Grande
+    file: destaque-horizontal-grande
+    group: Blocos Dinâmicos
+  - name: Imagem Quadrada Pequena
+    file: destaque-quadrado-pequeno
+    group: Blocos Dinâmicos
+  - name: Data e Título
+    file: destaque-simples-com-data
+    group: Blocos Dinâmicos
+  - name: Categoria e Título
+    file: destaque-simples-com-categoria
+    group: Blocos Dinâmicos
+  - name: Marcador e Título
+    file: destaque-simples-com-marcador
+    group: Blocos Dinâmicos
+  - name: Destaque Scroll Horizontal
+    file: destaque-scroll-horizontal
+    group: Blocos Dinâmicos
+  - name: Destaque Scroll Vertical
+    file: destaque-scroll-vertical
+    group: Blocos Dinâmicos
+  - name: Destaque Rotativo Padrão
+    file: destaque-rotativo-padrao
+    group: Blocos Dinâmicos
+  - name: Destaque Rotativo Wide
+    file: destaque-rotativo-wide
+    group: Blocos Dinâmicos
+
+box_types:
+  - name: Caixa Padrão
+    file: cx-caixa-padrao
+  - name: Caixa Padrão com borda
+    file: cx-caixa-padrao-com-borda
+
+form_types:
+  - name: Padrão
+    file: form-padrao

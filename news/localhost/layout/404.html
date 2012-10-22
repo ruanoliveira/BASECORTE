@@ -1,0 +1,91 @@
+<!-- { unique_editable_area: Header Logomarca, logo, 160, 60 } -->
+<!-- { unique_editable_area: Header Previsão do Tempo, tempo, 300, 80 } -->
+<!-- { unique_editable_area: Footer Rodapé, rodape, 720, 0 } -->
+<!-- { unique_editable_area: Footer Colunas, colunas, 960, 0 } -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head>
+	<title contents_from="{ 'Página não encontrada' | append: ' - ' | @site_title }">Título da Página</title>
+	<link rel="stylesheet" href="/layout/css/estilo.css" type="text/css" />
+	<link rel="icon" type="image/ico" href="/layout/favicon.ico" />
+	<link rel="shortcut icon" type="image/x-icon" href="/layout/favicon.ico" />
+</head>
+<body>
+
+<div id="page-wrapper" class="main">
+	<div id="page-container">
+		<div id="page-block">
+			<div id="header-wrapper">
+				<div id="header" class="cbf">
+					<div id="logo">
+						<div class="cbf" contents_from="{ @logo }"></div>
+					</div>
+					<div id="tempo" class="">
+						<div class="cbf" contents_from="{ @tempo }"></div>
+					</div>
+					<div id="search" class="">
+						<div class="search-caixa">
+							<form action="/buscar" id="cse-search-box">
+								<input type="hidden" name="cx" value="<?= core::$configuration->google_search_code?>" />
+								<input type="hidden" name="cof" value="FORID:11" />
+								<input type="hidden" name="ie" value="UTF-8" />
+								<input class="search-texto" type="text" name="q" size="30" style="background:#FFF;border:none;height:30px;overflow:hidden;padding-top:1px;padding-bottom:0px;line-height:28px;width:200px;margin-top:1px;margin-left:35px" />
+								<input class="search-imagem" type="image" name="sa" src="/layout/images/botao-search.png" width="60" height="34" style="" />
+							</form>
+							<div class="lupa"></div>
+						</div>
+					</div>
+					<div id="caixa-menu">
+						<div id="menu"><?= str_replace("\n",'',build_menu_for_2( bimboo_getTopMenu(Array(Array('name'=>'Home','url'=>'/','depth'=>0))) )); ?></div>
+					</div>
+				</div>
+			</div>
+
+			<div id="content-wrapper" class="cbf">
+				<div id="sidebar-block">
+					
+				</div>
+				<div id="content">
+					<div id="content-block">
+						<h1 id="internal-title">Página não encontrada</h1>
+						<div id="content-text" class="cbf">
+							<p>A página que você está tentando acessar não existe ou foi movida temporariamente. O link desta página está quebrado.</p>
+							<br /><br />
+							<p><b>Sugestões:</b>
+							<br /><br />
+								<ul>
+									<li>Verifique o endereço digitado e tente novamente.</li>
+									<li>Tente encontrar o conteúdo em nossa <a href="/">Página Inicial.</a></li>
+									<li>Se você caiu nesta página através de um link, entre em contato para tentar resolver o problema.</li>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="caixa-rodape">
+				<div id="colunas" contents_from="{ @colunas }"></div>
+				<div id="footer-wrapper" class="cbf">
+					<div id="footer" class="">
+						<p>Bimboo News© 2012 - Todos os direitos reservados - Desenvolvido por: <a href="#" target="_blank">Nome da Agência</a></p>
+						<div id="rodape" class="">
+							<div id="rodape" contents_from="{ @rodape }"></div>
+						</div>
+					</div>
+					<div id="bimboo">
+						<a href="http://www.bimboo.com.br/" target="_blank"><img src="/layout/images/logo-bimboo.png" width="120" height="45" /></a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+<div id="page-wrapper2"></div>
+</div>
+
+<?= core::analytics_code(); ?>
+</body>
+</html>
