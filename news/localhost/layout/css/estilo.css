@@ -135,7 +135,7 @@ caption {}
 #header-wrapper {width: 960px;height: 180px;position: relative;}
 #header-wrapper-interna {width: 960px;height: 180px;position: relative;}
 #header {padding-top: 40px;}
-#logo {width: 160px;height: 60px;position: absolute;left: 0px;top: 40px;}
+#logo {width: 220px;height: 60px;position: absolute;left: 0px;top: 40px;}
 #tempo {height: 80px;width: 300px;position: absolute;left: 230px;top: 40px;}
 #area-dinamica{width:960px;height:50px;}
 #data{width:240px;height:20px;line-height:20px;padding-top:30px;font: normal 11px arial;color:#666;float:left;}
@@ -209,16 +209,16 @@ caption {}
 =====================================================
 */
 
-#caixa-rodape {width: 960px;height: 297px !important;position: absolute !important;bottom: 0px !important;padding-bottom: 40px !important;border-top: 3px solid #666;margin-top: 30px;}
+#caixa-rodape{width: 960px;height: 297px !important;position: absolute !important;bottom: 0px !important;padding-bottom: 40px !important;border-top: 3px solid #666;margin-top: 30px;}
 #colunas {font: 11px arial;color: #666;line-height: 1.4em;padding-top:20px;padding-bottom:20px;}
 #colunas a, #colunas a:hover, #colunas a:visited {font: 11px arial;color: #666;line-height: 1.4em;}
 #footer-wrapper {font: 11px arial;color: #666;padding-top: 20px;padding-bottom: 20px;border-top: 1px solid #ccc;}
-#footer-wrapper p {margin: 0px;}
+#footer-wrapper p {margin: 0px;font: 11px arial;}
 #footer {width: 720px;float: left;font: 11px arial;color: #666;line-height: 1.4em;}
 #footer a {color: #FF6511;text-decoration: none;}
 #footer a:hover {color: #FF6511;text-decoration: underline;}
-#rodape {font: 11px arial;color: #666;line-height: 1.4em;}
-#bimboo {width: 120px;height: 45px;float: right;}
+#rodape, #rodape p {font: 11px arial;color: #666;line-height: 1.4em;}
+#bimboo {width: 120px;height: 14px;float: right;}
 
 /*
 =====================================================
