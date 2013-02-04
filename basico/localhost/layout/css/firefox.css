@@ -1,0 +1,17 @@
+@-moz-document url-prefix() {
+	/*
+	=====================================================
+		BLOCO ROTATIVO WIDE
+	=====================================================
+	*/
+	.bloco-rotativo-wide .categoria {}
+	.bloco-rotativo-wide .titulo-wide {margin-top:-5px;}
+	
+	/*
+	=====================================================
+		BLOCO ROTATIVO QUADRADO
+	=====================================================
+	*/
+	.bloco-rotativo-quadrado .categoria {}
+	.bloco-rotativo-quadrado .titulo-quadrado {margin-top:-5px;}
+}

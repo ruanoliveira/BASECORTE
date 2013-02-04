@@ -1,0 +1,27 @@
+<div id="search" class="">
+	<form method="get" id="sitesearch" style="border:none;" name="sitesearch" action="/buscar" class="form">
+		<input id="busca" class="campo" type="text" name="q" value="" />
+		<div id="imgbusca">
+			<img onclick="document.sitesearch.submit()" id="bt-buscar" src="/layout/images/botao-search.png" width="36" height="36" alt="Buscar" />	
+		</div>
+	</form>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+	function auto_input_tip( el , default_value ) {
+		var nwn = $(el);
+		if (nwn == null) return;
+		if (nwn.get('value') == '') nwn.set('value',default_value);
+		nwn.addEvent('focus', function() {
+			if (this.value == default_value) this.value = '';
+		});
+		nwn.addEvent('blur', function() {
+			if (this.value == '') this.value = default_value;
+		});
+	}
+		window.addEvent('domready', function() {
+			auto_input_tip( 'busca', 'Busca' );
+		});
+//]]>
+</script>

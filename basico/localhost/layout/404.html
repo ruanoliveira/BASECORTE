@@ -1,6 +1,5 @@
-<!-- { unique_editable_area: Logomarca, logo, 160, 60 } -->
-<!-- { unique_editable_area: Frase Topo, frase_topo, 350, 40 } -->
-<!-- { unique_editable_area: Rodapé, rodape, 720, 0 } -->
+<!-- { unique_editable_area: Logomarca, logo, 240, 60 } -->
+<!-- { unique_editable_area: Rodapé, rodape, 960, 0 } -->
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -8,6 +7,16 @@
 <head>
 	<title contents_from="{ 'Página não encontrada' | append: ' - ' | @site_title }">Título da Página</title>
 	<link rel="stylesheet" href="/layout/css/estilo.css" type="text/css" />
+	<!--[if IE 7]>
+		<link rel="stylesheet"  href="/layout/css/ie7.css" type="text/css" />
+	<![endif]-->
+	<!--[if IE 8]>
+		<link rel="stylesheet"  href="/layout/css/ie8.css" type="text/css" />
+	<![endif]-->
+	<!--[if gte IE 9]>
+		<link rel="stylesheet"  href="/layout/css/ie9.css" type="text/css" />
+	<![endif]-->
+	<link rel="stylesheet" href="/layout/css/firefox.css" type="text/css" />
 	<link rel="icon" type="image/ico" href="/layout/favicon.ico" />
 	<link rel="shortcut icon" type="image/x-icon" href="/layout/favicon.ico" />
 </head>
@@ -17,26 +26,14 @@
 	<div id="page-container">
 		<div id="page-block">
 
-			<div id="header-wrapper-interna">
+			<div id="header-wrapper">
 				<div id="header" class="cbf">
 					<div id="logo">
 						<div class="cbf" contents_from="{ @logo }"></div>
 					</div>
-					<div id="frase-topo" class="">
-						<div class="cbf" contents_from="{ @frase_topo }"></div>
-					</div>
-					<div id="search" class="">
-						<form method="get" id="sitesearch" style="border:none;" name="sitesearch" action="/buscar" class="form">
-							<input id="busca" class="campo" type="text" name="q" value="" />
-							<img id="bt-search" src="/layout/images/lupa.png" width="20" height="20" alt="" />
-							<div id="imgbusca">
-							  <img onclick="document.sitesearch.submit()" id="bt-buscar" src="/layout/images/botao-search.png" width="62" height="35" alt="Buscar" />	
-							</div>
-						</form>
-					</div>
-					<div id="caixa-menu">
-						<div id="menu"><?= str_replace("\n",'',build_menu_for_2( bimboo_getTopMenu(Array(Array('name'=>'Home','url'=>'/','depth'=>0))) )); ?></div>
-					</div>
+				</div>
+				<div id="caixa-menu">
+					<div id="menu"><?= str_replace("\n",'',build_menu_for_2( bimboo_getTopMenu(Array(Array('name'=>'Home','url'=>'/','depth'=>0))) )); ?></div>
 				</div>
 			</div>
 
@@ -45,10 +42,10 @@
 					<div><div class="breadcrumb"><a href="/">Página Inicial</a> |</div></div>
 					<div class="breadcrumb_current"><span>Pagina não encontrada</span></div>
 				</div>
-				<div id="sidebar-block">
-					
-				</div>
-				<div id="content">
+				<div id="content-container" class="cbf">
+					<div id="sidebar-block">
+					</div>
+					<div id="content">
 					<div id="content-block">
 						<h1 id="internal-title">Página não encontrada</h1>
 						<div id="content-text" class="cbf">
@@ -65,49 +62,27 @@
 						</div>
 					</div>
 				</div>
+				</div>
 			</div>
 
 			<div id="caixa-rodape">
 				<div id="footer-wrapper" class="cbf">
 					<div id="footer" class="">
-						<p>Bimboo Software© 2012 - Todos os direitos reservados - Desenvolvido por: <a href="#" target="_blank">Nome da Agência</a></p>
 						<div id="rodape" class="">
 							<div contents_from="{ @rodape }"></div>
 						</div>
 					</div>
 					<div id="bimboo">
-						<a href="http://www.bimboo.com.br/" target="_blank"><img src="/layout/images/logo-bimboo.png" width="120" height="45" /></a>
+						<a href="http://www.bimboo.com.br/" target="_blank">Powered by bimboo © 2013 - Todos os direitos reservados</a>
 					</div>
 				</div>
 			</div>
 
 		</div>
 	</div>
-<div id="page-wrapper2"></div>
 </div>
 
-<script type="text/javascript">
-//<![CDATA[
-
-function auto_input_tip( el , default_value ) {
-	var nwn = $(el);
-	if (nwn == null) return;
-	if (nwn.get('value') == '') nwn.set('value',default_value);
-	nwn.addEvent('focus', function() {
-		if (this.value == default_value) this.value = '';
-	});
-	nwn.addEvent('blur', function() {
-		if (this.value == '') this.value = default_value;
-	});
-}
-
-	window.addEvent('domready', function() {
-		auto_input_tip( 'busca', 'Busca' );
-	});
-
-//]]>
-</script>
-
 <?= core::analytics_code(); ?>
+
 </body>
 </html>

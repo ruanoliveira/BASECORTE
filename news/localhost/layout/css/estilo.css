@@ -277,6 +277,10 @@ blockquote h3 {font: normal 18px Arial;color: #999;}
 #comentario_rotativo h4.center {text-align: center;}
 #comentario_rotativo a:hover {text-decoration: none;border-bottom:none;}
 
+.comments_default input,.comments_default textarea, .comment-bubble-wrapper{background-color:#EEE !important;}
+.comment-bubble .comment-indicator {position: absolute;background: url('/layout/images/indicator.png') no-repeat;width: 25px;height: 13px;bottom: -13px;left: 40px;}
+.comment-bubble cite {padding-top: 5px;display: block;font:bold 12px Arial;padding-left:75px;}
+.comments_default .form input, .form textarea{background-image:none;}
 /*
 =====================================================
 	COMPONENTE TABS
