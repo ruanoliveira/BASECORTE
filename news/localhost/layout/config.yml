@@ -7,6 +7,8 @@ layouts:
     view: page-left
   - name: Página sem Barra Lateral
     view: page-inteira
+  - name: Página Simples
+    view: page-simples
 
 comments_default:
   - name: Padrão
@@ -17,91 +19,96 @@ comments_default:
 block_types:
   - name: Blog
     file: lista-blog
-    group: Exemplos de listas
+    group: Listas Dinâmicas
   - name: 1 Coluna
     file: lista-grade-1-coluna
-    group: Exemplos de listas
+    group: Listas Dinâmicas
   - name: 2 Colunas
     file: lista-grade-2-colunas
-    group: Exemplos de listas
+    group: Listas Dinâmicas
   - name: 3 Colunas
     file: lista-grade-3-colunas
-    group: Exemplos de listas
+    group: Listas Dinâmicas
   - name: Compacta com Hora
     file: lista-compacta-com-hora
-    group: Exemplos de listas
+    group: Listas Dinâmicas
   - name: Compacta com Data
     file: lista-compacta-com-data
-    group: Exemplos de listas
+    group: Listas Dinâmicas
   - name: Mini Compacta com Hora
     file: lista-mini-compacta-com-hora
-    group: Exemplos de listas
+    group: Listas Dinâmicas
   - name: Mini Compacta com Data
     file: lista-mini-compacta-com-data
-    group: Exemplos de listas
+    group: Listas Dinâmicas
   - name: 3 Colunas (Página Inteira)
     file: lista-grade-3-colunas-full
-    group: Exemplos de listas
+    group: Listas Dinâmicas
   - name: 4 Colunas (Página Inteira)
     file: lista-grade-4-colunas-full
-    group: Exemplos de listas
+    group: Listas Dinâmicas
   - name: Vertical Título Grande
     file: destaque-vertical-grande
-    group: Blocos de destaques
+    group: Blocos Dinâmicos
   - name: Vertical Título Médio
     file: destaque-vertical-medio
-    group: Blocos de destaques
+    group: Blocos Dinâmicos
   - name: Vertical Título Pequeno
     file: destaque-vertical-pequeno
-    group: Blocos de destaques
+    group: Blocos Dinâmicos
   - name: Horizontal Título Grande
     file: destaque-horizontal-grande
-    group: Blocos de destaques
+    group: Blocos Dinâmicos
   - name: Horizontal Título Médio
     file: destaque-horizontal-medio
-    group: Blocos de destaques
+    group: Blocos Dinâmicos
   - name: Quadrado com Categoria e Título
     file: destaque-quadrado-categoria-titulo
-    group: Blocos de destaques
+    group: Blocos Dinâmicos
   - name: Quadrado com Foto do Autor
     file: destaque-quadrado-foto-autor
-    group: Blocos de destaques
+    group: Blocos Dinâmicos
   - name: Título Grande
     file: destaque-texto-grande
-    group: Blocos de destaques
+    group: Blocos Dinâmicos
   - name: Título Médio
     file: destaque-texto-medio
-    group: Blocos de destaques
+    group: Blocos Dinâmicos
   - name: Título Pequeno
     file: destaque-texto-pequeno
-    group: Blocos de destaques
+    group: Blocos Dinâmicos
   - name: Data e Título
     file: destaque-simples-com-data
-    group: Blocos de destaques
+    group: Blocos Dinâmicos
   - name: Categoria e Título
     file: destaque-simples-com-categoria
-    group: Blocos de destaques
+    group: Blocos Dinâmicos
   - name: Marcador e Título
     file: destaque-simples-com-marcador
-    group: Blocos de destaques
+    group: Blocos Dinâmicos
   - name: Destaque Scroll Horizontal
-    file: destaque-scroll-horizontal
-    group: Blocos de destaques
+    file: new-destaque-scroll-horizontal
+    group: Blocos Dinâmicos
   - name: Destaque Scroll Vertical
-    file: destaque-scroll-vertical
-    group: Blocos de destaques
-  - name: Destaque Rotativo Padrão
-    file: destaque-rotativo-padrao
-    group: Blocos de destaques
-  - name: Destaque Rotativo Wide
-    file: destaque-rotativo-wide
-    group: Blocos de destaques
+    file: new-destaque-scroll-vertical
+    group: Blocos Dinâmicos
+  - name: Destaque Rotativo com Thumbs
+    file: new-destaque-rotativo-thumb
+    group: Blocos Dinâmicos
+  - name: Destaque Rotativo Vertical
+    file: new-destaque-rotativo-vertical
+    group: Blocos Dinâmicos
+  - name: Destaque Rotativo Horizontal
+    file: new-destaque-rotativo-horizontal
+    group: Blocos Dinâmicos
 
 box_types:
   - name: Caixa Padrão
     file: cx-caixa-padrao
   - name: Caixa Padrão com borda
     file: cx-caixa-padrao-com-borda
+  - name: Caixa Mais Lidas
+    file: cx-caixa-mais-lidas
 
 form_types:
   - name: Padrão
