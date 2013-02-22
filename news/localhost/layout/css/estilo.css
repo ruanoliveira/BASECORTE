@@ -652,13 +652,13 @@ li.scroll-vertical-li {padding-right: 0px !important;}
 .sliderkit-nav-clip ul li .scroll-vertical > a:hover {opacity: 1;}
 .sliderkit-nav-clip ul li .scroll-vertical p {font-size: 0.9em;}
 .sliderkit-nav-clip ul li .scroll-vertical .rlt-link-readmore:hover {text-decoration: underline;}
-.sliderkit .scroll-vertical .sliderkit-count {top: 265px;}
+.sliderkit .scroll-vertical .sliderkit-count {top: 265px;right: 462px;}
 .sliderkit ul li .scroll-vertical {padding-right: 7px !important;padding-left: 0px;}
 .sliderkit-nav .scroll-vertical .sliderkit-nav-btn {position: absolute;top: 260px;}
 .sliderkit-nav .scroll-vertical .sliderkit-nav-btn span {display: none;}
 .sliderkit-nav .scroll-vertical .sliderkit-nav-btn a {display: block;z-index: 10;width: 50px;height: 30px;background: transparent url("/layout/images/arrows-h-btn2.png") no-repeat 0 0;}
-.sliderkit-nav .scroll-vertical .sliderkit-nav-prev {left: 415px;}
-.sliderkit-nav .scroll-vertical .sliderkit-nav-next {right: 415px;}
+.sliderkit-nav .scroll-vertical .sliderkit-nav-prev {left: 405px;}
+.sliderkit-nav .scroll-vertical .sliderkit-nav-next {right: 405px;}
 .sliderkit-nav .scroll-vertical .sliderkit-nav-prev a {background-position: 0 0;}
 .sliderkit-nav .scroll-vertical .sliderkit-nav-next a {background-position: 0 -30px;}
 .sliderkit-nav .scroll-vertical .sliderkit-nav-prev a:hover, .sliderkit-nav .scroll-vertical .sliderkit-nav-prev a:focus {background-position: -50px 0;}
