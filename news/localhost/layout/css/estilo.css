@@ -150,11 +150,10 @@ caption {}
 #menu {width: 960px !important;margin:0 auto;*position: relative;z-index: 1000 !important;border-top:1px solid #AAA;}
 #menu a {color:#444;height:60px;text-decoration: none;text-transform: uppercase;}
 #menu ul {list-style: none;float:right;width:910px;margin: 0;}
-#menu ul li a{height:60px !important;font:bold 16px 'Arial' !important;background: none;list-style: none !important;padding-left: 17px;padding-right: 17px;line-height: 60px;color: #444;}
+#menu ul li a{height:60px !important;font:bold 14px 'Arial' !important;background: none;list-style: none !important;padding-left: 17px;padding-right: 17px;line-height: 60px;color: #444;}
 #menu ul li a span{position:relative;top:10px;}
-#menu .capa a{float: left;display: block;height: 60px;font-weight: bold;font-size: 16px;font-family: 'Arial' !important;padding-left:0px;padding-right:0px;line-height: 60px;color: #444;text-decoration: none;text-transform: uppercase;}
-#menu .capa a:hover{color: #FE3F04;background-image:url('/layout/images/seta-menu.png');background-position: bottom;background-repeat:no-repeat;padding-bottom:-21px;}
-#menu .capa a.active{color: #FE3F04;}
+#menu .capa a{float: left;display: block;height: 60px;font-weight: bold;font-size: 14px;font-family: 'Arial' !important;padding-left:0px;padding-right:0px;line-height: 60px;color: #444;text-decoration: none;text-transform: uppercase;}
+#menu .capa a:hover,#menu .capa a.active{color: #FE3F04;background-image:url('/layout/images/seta-menu.png');background-position: bottom;background-repeat:no-repeat;padding-bottom:-21px;}
 #menu ul ul li {*position: relative;z-index: 1000 !important;height:35px !important;}
 #menu ul ul ul li {*position: relative;z-index: 1000 !important;padding: 5px 10px 5px 10px;}
 /*LEVEL ONE*/
@@ -166,8 +165,7 @@ caption {}
 #menu ul li.hover ul, #menu ul li:hover ul{margin-top:0px;border-bottom:1px solid #AAAAAA;border-right:1px solid #AAAAAA;border-left:1px solid #AAAAAA;}
 #menu ul li.hover a, #menu ul li:hover a {margin-bottom:21px;color: #FE3F04;background-color: transparent;background-image:url('/layout/images/seta-menu.png');background-position: bottom;background-repeat:no-repeat;padding-bottom:0px;}
 #menu ul li a {display: block;color: #444;}
-#menu ul li a:hover, #menu ul li.selected a.active:hover, #menu ul li.selected:hover a.active {color: #FE3F04;background-image:url('/layout/images/seta-menu.png');background-position: bottom;background-repeat:no-repeat;padding-bottom:-21px;}
-#menu ul li a.active {color: #FE3F04;background:transparent;}
+#menu ul li a:hover, #menu ul li.selected a.active:hover, #menu ul li.selected:hover a.active,#menu ul li a.active {color: #FE3F04;background-image:url('/layout/images/seta-menu.png');background-position: bottom;background-repeat:no-repeat;padding-bottom:-21px;}
 #menu ul li:last-child {}/* Doesn't work in IE */
 /*LEVEL TWO*/
 #menu ul ul {z-index: 1000 !important;margin-left: 35px;width:160px;height:auto;background: #FFF !important;visibility: hidden;position: absolute;top: 100%;margin-top:0px;color: #444 !important;border: none;padding-top: 0px;padding-bottom: 0px;}
@@ -411,7 +409,7 @@ blockquote h3 {font: normal 20px Arial;color: #999;}
 .bloco-titulo-pequeno a:hover {text-decoration: underline;border-bottom: none;}
 .categoria, .data {font: normal 12px arial;color: #888;margin-bottom:5px;text-transform:uppercase;}
 .resumo {font: normal 14px arial;color: #999;}
-.borda {background: none repeat scroll 0 0 #FFFFFF;border: 1px solid #CCC;border-radius: 0px 0px 0px 0px;box-shadow: 0 0 0px rgba(0, 0, 0, 0.3);padding: 5px;}
+.borda {background: none repeat scroll 0 0 #FFFFFF;border: 1px solid #DDD;border-radius: 0px 0px 0px 0px;box-shadow: 0 0 0px rgba(0, 0, 0, 0.3);padding: 5px;}
 
 /* 
 =====================================================
