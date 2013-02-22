@@ -24,6 +24,14 @@
 	<link rel="icon" type="image/ico" href="/layout/favicon.ico" />
 	<link rel="shortcut icon" type="image/x-icon" href="/layout/favicon.ico" />
 	<?= $sra_html_area ?>
+	<script type="text/javascript">
+		jQuery(document).ready(function(){
+			var altura = jQuery('#page-container').height();
+			if(altura < 900){
+				jQuery("#caixa-rodape").addClass("modificado");
+			}
+		});
+	</script>
 </head>
 <body>
 
