@@ -542,6 +542,7 @@ blockquote h3 {font: normal 20px Arial;color: #999;}
 .sliderkit .sliderkit-nav-prev.sliderkit-btn-disable a {background-position: -50px 0;}
 .sliderkit .sliderkit-nav-next.sliderkit-btn-disable a {background-position: -50px -25px;}
 .sliderkit .sliderkit-nav-clip .borda{padding:0px;border:none;}
+.sliderkit .bloco-titulo-grande a{display:inline !important;}
 
 /*
 =====================================================
