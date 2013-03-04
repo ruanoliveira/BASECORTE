@@ -190,16 +190,17 @@ caption {}
 =====================================================
 */
 
-#sidebar-menu{width:960px;height:100%;min-height:40px;margin:0 auto;}
+#sidebar-menu,#breadcrumbs{width:960px;height:100%;min-height:40px;margin:0 auto;}
 #sidebar-menu ul, #sidebar-menu li {padding:0px;margin:0px;background:none;}
 #sidebar-menu li {display:inline;}
-#sidebar-menu a {float:left;display:block;padding-left:10px;padding-right:16px;height:40px;font:normal 16px Arial;line-height:34px;color:#FE3F04;background:url('/layout/images/seta.gif') no-repeat top right;}
+#sidebar-menu a,.breadcrumb {float:left;display:block;padding-left:10px;padding-right:16px;height:40px;font:normal 16px Arial;line-height:34px;color:#FE3F04;background:url('/layout/images/seta.gif') no-repeat top right;}
 #sidebar-menu a.first,#sidebar-menu a.unique{padding-left:0px !important;}
 #sidebar-menu a:hover {text-decoration:none;color:#FE3F04;}
 #sidebar-menu a.unique,#sidebar-menu a.last {margin-right:0px;}
-#sidebar-menu li a,#sidebar-menu li a.last {margin-right:0px;}
+#sidebar-menu li a,#sidebar-menu li a.last, .breadcrumb_current {margin-right:0px;}
 #sidebar-menu li a {padding-right:10px;padding-left:10px;font:normal 16px Arial;line-height:34px;color:#666;background:none;}
-#sidebar-menu li.last a {background:none;}
+#sidebar-menu li.last a, .breadcrumb_current {background:none;}
+.breadcrumb_current{float:left;padding-top:8px;margin-left:8px;}
 
 /*
 =====================================================
