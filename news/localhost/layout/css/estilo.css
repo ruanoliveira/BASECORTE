@@ -420,7 +420,7 @@ blockquote h3 {font: normal 20px Arial;color: #999;}
 
 .lista-blog {}
 .lista-blog .blog-button {float: right;width: 180px;}
-.blog-status-container {float: left;width: 480px;margin-top: -5px;}
+.blog-status-container {float: left;width: 460px;margin-top: -5px;}
 .blog-comments {background: url('/layout/images/icon-blog-comment.gif') no-repeat;width: 300px;font: normal 11px arial;margin-top: -10px;}
 .lista-blog .categoria {margin-bottom: 10px;}
 .lista-blog .resumo {}
