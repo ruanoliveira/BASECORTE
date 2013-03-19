@@ -18,40 +18,40 @@ comments_default:
 
 block_types:
   - name: 1 Coluna
-    file: lista-grade-1-coluna
+    file: new-lista-grade-1-coluna
     group: Listas Dinâmicas
   - name: 2 Colunas
-    file: lista-grade-2-colunas
+    file: new-lista-grade-2-colunas
     group: Listas Dinâmicas
   - name: 3 Colunas
-    file: lista-grade-3-colunas
+    file: new-lista-grade-3-colunas
     group: Listas Dinâmicas
   - name: Blog
-    file: lista-blog
+    file: new-lista-blog
     group: Listas Dinâmicas
   - name: 3 Colunas (Página Inteira)
-    file: lista-grade-3-colunas-full
+    file: new-lista-grade-3-colunas-full
     group: Listas Dinâmicas
   - name: 4 Colunas (Página Inteira)
-    file: lista-grade-4-colunas-full
+    file: new-lista-grade-4-colunas-full
     group: Listas Dinâmicas
   - name: Imagem Vertical
-    file: destaque-vertical-grande
+    file: new-destaque-vertical
     group: Blocos Dinâmicos
   - name: Imagem Horizontal
-    file: destaque-horizontal-grande
+    file: new-destaque-horizontal
     group: Blocos Dinâmicos
   - name: Imagem Mini Quadrada
-    file: destaque-quadrado-pequeno
+    file: new-destaque-quadrado-pequeno
     group: Blocos Dinâmicos
   - name: Data e Título
-    file: destaque-simples-com-data
+    file: new-destaque-simples-com-data
     group: Blocos Dinâmicos
   - name: Categoria e Título
-    file: destaque-simples-com-categoria
+    file: new-destaque-simples-com-categoria
     group: Blocos Dinâmicos
   - name: Marcador e Título
-    file: destaque-simples-com-marcador
+    file: new-destaque-simples-com-marcador
     group: Blocos Dinâmicos
   - name: Destaque Scroll Horizontal
     file: new-destaque-scroll-horizontal

@@ -18,73 +18,52 @@ comments_default:
 
 block_types:
   - name: Blog
-    file: lista-blog
+    file: new-lista-blog
     group: Listas Dinâmicas
   - name: 1 Coluna
-    file: lista-grade-1-coluna
+    file: new-lista-grade-1-coluna
     group: Listas Dinâmicas
   - name: 2 Colunas
-    file: lista-grade-2-colunas
+    file: new-lista-grade-2-colunas
     group: Listas Dinâmicas
   - name: 3 Colunas
-    file: lista-grade-3-colunas
+    file: new-lista-grade-3-colunas
     group: Listas Dinâmicas
   - name: Compacta com Hora
-    file: lista-compacta-com-hora
+    file: new-lista-compacta-com-hora
     group: Listas Dinâmicas
   - name: Compacta com Data
-    file: lista-compacta-com-data
+    file: new-lista-compacta-com-data
     group: Listas Dinâmicas
   - name: Mini Compacta com Hora
-    file: lista-mini-compacta-com-hora
+    file: new-lista-mini-compacta-com-hora
     group: Listas Dinâmicas
   - name: Mini Compacta com Data
-    file: lista-mini-compacta-com-data
+    file: new-lista-mini-compacta-com-data
     group: Listas Dinâmicas
   - name: 3 Colunas (Página Inteira)
-    file: lista-grade-3-colunas-full
+    file: new-lista-grade-3-colunas-full
     group: Listas Dinâmicas
   - name: 4 Colunas (Página Inteira)
-    file: lista-grade-4-colunas-full
+    file: new-lista-grade-4-colunas-full
     group: Listas Dinâmicas
-  - name: Vertical Título Grande
-    file: destaque-vertical-grande
+  - name: Vertical Título
+    file: new-destaque-vertical
     group: Blocos Dinâmicos
-  - name: Vertical Título Médio
-    file: destaque-vertical-medio
-    group: Blocos Dinâmicos
-  - name: Vertical Título Pequeno
-    file: destaque-vertical-pequeno
-    group: Blocos Dinâmicos
-  - name: Horizontal Título Grande
-    file: destaque-horizontal-grande
-    group: Blocos Dinâmicos
-  - name: Horizontal Título Médio
-    file: destaque-horizontal-medio
+  - name: Horizontal Título
+    file: new-destaque-horizontal
     group: Blocos Dinâmicos
   - name: Quadrado com Categoria e Título
-    file: destaque-quadrado-categoria-titulo
-    group: Blocos Dinâmicos
-  - name: Quadrado com Foto do Autor
-    file: destaque-quadrado-foto-autor
-    group: Blocos Dinâmicos
-  - name: Título Grande
-    file: destaque-texto-grande
-    group: Blocos Dinâmicos
-  - name: Título Médio
-    file: destaque-texto-medio
-    group: Blocos Dinâmicos
-  - name: Título Pequeno
-    file: destaque-texto-pequeno
+    file: new-destaque-quadrado-categoria-titulo
     group: Blocos Dinâmicos
   - name: Data e Título
-    file: destaque-simples-com-data
+    file: new-destaque-simples-com-data
     group: Blocos Dinâmicos
   - name: Categoria e Título
-    file: destaque-simples-com-categoria
+    file: new-destaque-simples-com-categoria
     group: Blocos Dinâmicos
   - name: Marcador e Título
-    file: destaque-simples-com-marcador
+    file: new-destaque-simples-com-marcador
     group: Blocos Dinâmicos
   - name: Destaque Scroll Horizontal
     file: new-destaque-scroll-horizontal
