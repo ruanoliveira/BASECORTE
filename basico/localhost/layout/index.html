@@ -2,7 +2,9 @@
 <!-- { editable_area: HTML ou CSS, sra_html_area, 0, 0 } -->
 <!-- { editable_area: Conteúdo, content_area, 960, 0 } -->
 <!-- { editable_area: Bloco Lateral, sra_barra_lateral, 240, 0 } -->
-<!-- { unique_editable_area: Logomarca, logo, 240, 60 } -->
+<!-- { unique_editable_area: Logomarca, logo, 220, 60 } -->
+<!-- { unique_editable_area: Frase Topo, frase, 400, 40 } -->
+<!-- { unique_editable_area: Buscar, buscar, 240, 35 } -->
 <!-- { unique_editable_area: Rodapé, rodape, 960, 0 } -->
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -46,12 +48,20 @@
 					<div id="logo">
 						<div class="cbf" contents_from="{ @logo }"></div>
 					</div>
+					<div id="frase">
+						<div class="cbf" contents_from="{ @frase }"></div>
+					</div>
+					<div id="buscar">
+						<div class="cbf" contents_from="{ @buscar }"></div>
+					</div>
 				</div>
 				<div id="caixa-menu">
 					<div id="menu"><?= str_replace("\n",'',build_menu_for_2( bimboo_getTopMenu(Array(Array('name'=>'Home','url'=>'/','depth'=>0))) )); ?></div>
 				</div>
 			</div>
-				
+			<div id="banner" class="cbf">
+				<?= sliders_jq::content_html_banner_slider_jquery(); ?>
+			</div>
 			<div id="content-wrapper">
 				<div id="content-container" class="cbf">
 					<div id="content-block" class="cbf" contents_from="{ @content_area }">

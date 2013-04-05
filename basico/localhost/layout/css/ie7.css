@@ -10,14 +10,22 @@ a.button:hover span, button:hover span, a.sel span, button.hover span {backgroun
 a.button:active, button:active, button.active {border:none;background: url('/layout/images/but-sdoor-left-hit.gif') no-repeat;}
 a.button:active span, button:active span, button.active span {background: url('/layout/images/but-sdoor-right-hit.gif') no-repeat right;}
 
+/*
+=====================================================
+	LISTA BLOG
+=====================================================
+*/
+
+.lista-blog .borda a{line-height:0px !important;font-size: 0px;}
+
 /* 
 =====================================================
 	BLOCO  ROTATIVO COM THUMB
 =====================================================
 */
+
 .bloco-rotativo-thumb .pagination-rotativo-thumb a img{position:relative;margin-top: -3px;z-index:-1;}
 .bloco-rotativo-thumb .pagination-rotativo-thumb a:hover, .bloco-rotativo-thumb .pagination-rotativo-thumb a.active {border-top:3px solid #FF3800;display: inline-block;filter:alpha(opacity=80);}
-
 
 /* 
 =====================================================
@@ -56,8 +64,8 @@ a.button:active span, button:active span, button.active span {background: url('/
 	background-position: top left;
 	display: inline-block;
 }
-.comments_default #mostrar img{margin-top:10px;}
-.comments_default #mostrar h3{margin-top:13px;}
+.comments_default #mostrar img{margin-top:2px;}
+.comments_default #mostrar h3{margin-top:5px;}
 .comments_default_form .comments_mensagem {float:left;}
 .comments_default_form .comments_mensagem label{width:300px !important;}
 
@@ -66,7 +74,7 @@ a.button:active span, button:active span, button.active span {background: url('/
 	BLOCO ROTATIVO WIDE
 =====================================================
 */
-.bloco-rotativo-wide .categoria {background: url('/layout/images/grey.png');}
+
 .bloco-rotativo-wide .titulo-wide {margin-top:-3px;background: url('/layout/images/grey.png');}
 
 /*
@@ -74,5 +82,5 @@ a.button:active span, button:active span, button.active span {background: url('/
 	BLOCO ROTATIVO QUADRADO
 =====================================================
 */
-.bloco-rotativo-quadrado .categoria {background: url('/layout/images/grey.png');}
+
 .bloco-rotativo-quadrado .titulo-quadrado {margin-top:-3px;background: url('/layout/images/grey.png');}

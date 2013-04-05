@@ -17,6 +17,15 @@ comments_default:
     file: comments_rotate
 
 block_types:
+  - name: Blog
+    file: new-lista-blog
+    group: Listas Dinâmicas
+  - name: Vídeo
+    file: new-lista-video
+    group: Listas Dinâmicas
+  - name: Compacta com Hora
+    file: new-lista-compacta-com-hora
+    group: Listas Dinâmicas
   - name: 1 Coluna
     file: new-lista-grade-1-coluna
     group: Listas Dinâmicas
@@ -25,9 +34,6 @@ block_types:
     group: Listas Dinâmicas
   - name: 3 Colunas
     file: new-lista-grade-3-colunas
-    group: Listas Dinâmicas
-  - name: Blog
-    file: new-lista-blog
     group: Listas Dinâmicas
   - name: 3 Colunas (Página Inteira)
     file: new-lista-grade-3-colunas-full
@@ -42,7 +48,16 @@ block_types:
     file: new-destaque-horizontal
     group: Blocos Dinâmicos
   - name: Imagem Mini Quadrada
-    file: new-destaque-quadrado-pequeno
+    file: new-destaque-quadrado-categoria-titulo
+    group: Blocos Dinâmicos
+  - name: Vídeo Vertical
+    file: new-destaque-video-vertical
+    group: Blocos Dinâmicos
+  - name: Vídeo Horizontal
+    file: new-destaque-video-horizontal
+    group: Blocos Dinâmicos
+  - name: Vídeo Quadrado
+    file: new-destaque-video-quadrado
     group: Blocos Dinâmicos
   - name: Data e Título
     file: new-destaque-simples-com-data

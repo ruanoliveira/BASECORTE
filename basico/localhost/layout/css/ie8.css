@@ -12,13 +12,6 @@ a.button:active span, button:active span, button.active span {background: url('/
 
 /* 
 =====================================================
-	MENU PRINCIPAL
-=====================================================
-*/
-#menu li a:hover span{background-image:url('/layout/images/seta-menu.png');background-position: bottom;background-repeat:no-repeat;padding-bottom:21px;}
-
-/* 
-=====================================================
 	BLOCO  ROTATIVO COM THUMB
 =====================================================
 */
@@ -61,21 +54,21 @@ a.button:active span, button:active span, button.active span {background: url('/
 	background-position: top left;
 	display: inline-block;
 }
-.comments_default #mostrar img{margin-top:10px;}
-.comments_default #mostrar h3{margin-top:13px;}
+.comments_default #mostrar img{margin-top:2px;}
+.comments_default #mostrar h3{margin-top:5px;}
 
 /*
 =====================================================
 	BLOCO ROTATIVO WIDE
 =====================================================
 */
-.bloco-rotativo-wide .categoria {background: url('/layout/images/grey.png');}
-.bloco-rotativo-wide .titulo-wide {background: url('/layout/images/grey.png');margin-top:-5px;}
+
+.bloco-rotativo-wide .titulo-wide {background: url('/layout/images/grey.png');}
 
 /*
 =====================================================
 	BLOCO ROTATIVO QUADRADO
 =====================================================
 */
-.bloco-rotativo-quadrado .categoria {background: url('/layout/images/grey.png');}
-.bloco-rotativo-quadrado .titulo-quadrado {background: url('/layout/images/grey.png');margin-top:-5px;}
+
+.bloco-rotativo-quadrado .titulo-quadrado {background: url('/layout/images/grey.png');}

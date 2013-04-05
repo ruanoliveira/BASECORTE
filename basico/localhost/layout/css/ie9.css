@@ -13,13 +13,6 @@ a.button:active span, button:active span, button.active span {background: url('/
 
 /* 
 =====================================================
-	MENU PRINCIPAL
-=====================================================
-*/
-#menu li a {float: left;display: block;height: 60px;font-weight: bold;font-size: 16px;font-family: 'Arial' !important;padding-left:17px;padding-right:16px;line-height: 60px;color: #444;text-decoration: none;text-transform: uppercase;}
-
-/* 
-=====================================================
 	COMENTÁRIO DEFAULT
 =====================================================
 */
@@ -55,5 +48,5 @@ a.button:active span, button:active span, button.active span {background: url('/
 	background-position: top left;
 	display: inline-block;
 }
-.comments_default #mostrar img{margin-top:10px;}
-.comments_default #mostrar h3{margin-top:13px;}
+.comments_default #mostrar img{margin-top:2px;}
+.comments_default #mostrar h3{margin-top:5px;}

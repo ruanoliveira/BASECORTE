@@ -1,9 +1,25 @@
 @-moz-document url-prefix() {
 	/*
 	=====================================================
+		MENU
+	=====================================================
+	*/
+	#menu li a:hover span,#menu li.selected a.active span{padding-bottom:19px;}
+	
+	/*
+	=====================================================
+		LISTA BLOG
+	=====================================================
+	*/
+	
+	.lista-blog .borda a{line-height:0px;}
+	
+	/*
+	=====================================================
 		BLOCO ROTATIVO WIDE
 	=====================================================
 	*/
+	
 	.bloco-rotativo-wide .categoria {}
 	.bloco-rotativo-wide .titulo-wide {margin-top:-5px;}
 	
