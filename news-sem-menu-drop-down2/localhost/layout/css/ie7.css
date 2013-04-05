@@ -1,0 +1,62 @@
+
+/*
+=====================================================
+	BUTTONS
+=====================================================
+*/
+a.button, button {border:none;background: url('/layout/images/but-sdoor-left.gif') no-repeat;}
+a.button span, button span {margin-top:-1px;margin-right:-1px;background: url('/layout/images/but-sdoor-right.gif') no-repeat right;color: #444;}
+a.button:hover, button:hover, a.sel, button.hover {border:none;background: url('/layout/images/but-sdoor-left-over.gif') no-repeat !important;}
+a.button:hover span, button:hover span, a.sel span, button.hover span {background: url('/layout/images/but-sdoor-right-over.gif') no-repeat right !important;color: #FFF;}
+a.button:active, button:active, button.active {border:none;background: url('/layout/images/but-sdoor-left-hit.gif') no-repeat;}
+a.button:active span, button:active span, button.active span {background: url('/layout/images/but-sdoor-right-hit.gif') no-repeat right;}
+
+/* 
+=====================================================
+	BLOCO  ROTATIVO COM THUMB
+=====================================================
+*/
+.bloco-rotativo-thumb .pagination-rotativo-thumb a img{position:relative;margin-top: -3px;z-index:-1;}
+.bloco-rotativo-thumb .pagination-rotativo-thumb a:hover, .bloco-rotativo-thumb .pagination-rotativo-thumb a.active {border-top:3px solid #FF3800;display: inline-block;filter:alpha(opacity=80);}
+
+/* 
+=====================================================
+	COMENTÁRIO DEFAULT
+=====================================================
+*/
+.comments_default #mostrar {
+	width:300px;
+	height:50px;
+	background-color: transparent;
+	filter: none;
+	box-shadow: none;
+	border: none;
+	border-radius: none;
+	background-image:url('/layout/images/comentarion.png');
+	background-repeat:no-repeat;
+	background-position: top left;
+	display: inline-block;
+}
+.comments_default #mostrar:hover {
+	background-color: transparent !important;
+	filter: none;
+	box-shadow: none;
+	border: none;
+	border-radius: none;
+	background-image:url('/layout/images/comentarioh.png') !important;
+	background-repeat:no-repeat;
+	background-position: top left;
+	display: inline-block;
+}
+.comments_default #mostrar img{}
+.comments_default #mostrar h3{}
+/* 
+=====================================================
+	BLOCO TEXTO TÍTULO COM MARCADOR
+=====================================================
+*/
+
+.bloco-titulo-marcador {}
+.bloco-titulo-marcador img{padding-top: 0px;}
+.bloco-titulo-marcador .bloco-titulo-pequeno, .bloco-titulo-marcador .bloco-titulo-pequeno a, .bloco-titulo-marcador .bloco-titulo-pequeno a:visited {}
+.bloco-titulo-marcador div.fl{padding-top:0px !important;height:0px;}

@@ -1,0 +1,128 @@
+<!-- { unique_editable_area: Logomarca, logo, 220, 60 } -->
+<!-- { unique_editable_area: Frase Topo, frase, 400, 40 } -->
+<!-- { unique_editable_area: Buscar, buscar, 240, 35 } -->
+<!-- { unique_editable_area: Rodapé, rodape, 960, 0 } -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head>
+	<title contents_from="{ @query | append: ' - Busca - ' | @site_title }">Título da Página</title>
+	<link rel="stylesheet" href="/layout/css/estilo.css" type="text/css" />
+	<!--[if IE 7]>
+		<link rel="stylesheet"  href="/layout/css/ie7.css" type="text/css" />
+	<![endif]-->
+	<!--[if IE 8]>
+		<link rel="stylesheet"  href="/layout/css/ie8.css" type="text/css" />
+	<![endif]-->
+	<!--[if gte IE 9]>
+		<link rel="stylesheet"  href="/layout/css/ie9.css" type="text/css" />
+	<![endif]-->
+	<link rel="stylesheet" href="/layout/css/firefox.css" type="text/css" />
+	<link rel="icon" type="image/ico" href="/layout/favicon.ico" />
+	<link rel="shortcut icon" type="image/x-icon" href="/layout/favicon.ico" />
+	<script type="text/javascript">
+		jQuery(document).ready(function(){
+			var altura = jQuery('#page-container').height();
+			if(altura < 900){
+				jQuery("#caixa-rodape").addClass("modificado");
+			}
+		});
+	</script>
+</head>
+<body>
+
+<div id="page-wrapper-interna" class="main">
+	<div id="page-container">
+		<div id="page-block">
+
+			<div id="header-wrapper">
+				<div id="header" class="cbf">
+					<div id="logo">
+						<div class="cbf" contents_from="{ @logo }"></div>
+					</div>
+					<div id="frase">
+						<div class="cbf" contents_from="{ @frase }"></div>
+					</div>
+					<div id="buscar">
+						<div class="cbf" contents_from="{ @buscar }"></div>
+					</div>
+				</div>
+				<div id="caixa-menu">
+					<div id="menu"><?= str_replace("\n",'',build_menu_for_2( bimboo_getTopMenu(Array(Array('name'=>'Home','url'=>'/','depth'=>0))) )); ?></div>
+				</div>
+			</div>
+
+			<div id="content-wrapper" class="cbf">
+				<div id="breadcrumbs" class="cbf">
+					<div><div class="breadcrumb"><a href="/">Página Inicial</a></div></div>
+					<div class="breadcrumb_current"><span>Busca</span></div>
+				</div>
+				<div id="content-container" class="cbf">
+					<div id="sidebar-block">
+					</div>
+					<div id="content">
+					<div id="content-block">
+						<h1 id="internal-title">Buscar</h1>
+						<div id="content-text" class="cbf">
+							<? if ($query == '') { ?>
+											<p>Você precisa colocar o texto a ser buscado.</p>
+										<? } else if (!count($records)) { ?>
+							<p>Sua busca por <b>'<?= $query ?>'</b> não retornou nenhum resultado.</p>
+							<p>Tente novamente usando outra(s) palavra(s)-chave.</p>
+							<p><b>Veja como melhorar suas buscas:</b></p>
+							<ul>
+								<li>Verifique sempre se os termos estão digitados corretamente.</li>
+								<li> Não use muitas palavras-chave ao mesmo tempo.</li>
+								<li>Evite termos muito específicos. Por exemplo, se você procura uma televisão de 29 polegadas, use o nome do fabricante e não o código do modelo.</li>
+							</ul>
+							<? } else { ?>
+							Resultados de sua busca por <b><?= $query ?></b>
+							<div>
+								<? foreach ($records as $record) { ?>
+								<div class="pt10">
+									<h2 style="margin-bottom:3px"><a href="<?= $site_url . '/' . $record->url ?>"><?= $record->title ?></a></h2>
+									<div style="color:#999;font-size:12px;margin-top:0px;margin-bottom:3px"><?= core::format_date($record->published_at->get(),'%A, %d/%B/%Y %H:%M:%S',1) ?></div>
+									<? if (strlen($record->description)) { ?><p><?= truncate_text($record->description,256) ?></p><? } ?>
+								</div>
+								<? } ?>
+							</div>
+							<? if (count($pages)) { ?>
+							<div class="cbf page_numbers mt20">
+								<? foreach ($pages as $page) { ?>
+									<? if ($page['selected']) { ?>
+									<a href="<?= $page['href'] ?>" class="button sel"><span><?= $page['text'] ?></span></a>
+									<? } else { ?>
+									<a href="<?= $page['href'] ?>" class="button"><span><?= $page['text'] ?></span></a>
+									<? } ?>
+								<? } ?>
+							</div>
+							<? } ?>
+							<? } ?>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+
+			<div id="caixa-rodape">
+				<div id="footer-wrapper" class="cbf">
+					<div id="footer" class="">
+						<div id="rodape" class="">
+							<div contents_from="{ @rodape }"></div>
+						</div>
+					</div>
+					<div id="bimboo">
+						<a href="http://www.bimboo.com.br/" target="_blank">Powered by bimboo © 2013 - Todos os direitos reservados</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<?= core::analytics_code(); ?>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+#page-wrapper-interna, #page-wrapper {overflow:hidden;}
+/*
+=====================================================
+	BUTTONS
+=====================================================
+*/
+a.button, button {border:none;background: url('/layout/images/but-sdoor-left.gif') no-repeat;}
+a.button span, button span {margin-top:-1px;margin-right:-1px;background: url('/layout/images/but-sdoor-right.gif') no-repeat right;color: #444;}
+a.button:hover, button:hover, a.sel, button.hover {border:none;background: url('/layout/images/but-sdoor-left-over.gif') no-repeat !important;}
+a.button:hover span, button:hover span, a.sel span, button.hover span {background: url('/layout/images/but-sdoor-right-over.gif') no-repeat right !important;color: #FFF;}
+a.button:active, button:active, button.active {border:none;background: url('/layout/images/but-sdoor-left-hit.gif') no-repeat;}
+a.button:active span, button:active span, button.active span {background: url('/layout/images/but-sdoor-right-hit.gif') no-repeat right;}
+
+/* 
+=====================================================
+	COMENTÁRIO DEFAULT
+=====================================================
+*/
+.comments_default #mostrar {
+	width:295px;
+	height:49px;
+	background-color: transparent;
+	filter: none;
+	box-shadow: none;
+	border: none;
+	border-radius: none;
+	background-image:url('/layout/images/comentarion.png');
+	background-repeat:no-repeat;
+	background-position: top left;
+	display: inline-block;
+	color: #777777;
+	font-family: arial;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 6px 14px;
+	text-decoration: none;
+	text-shadow: 1px 1px 2px #ffffff;
+	cursor: pointer;
+}
+.comments_default #mostrar:hover {
+	background-color: transparent !important;
+	filter: none;
+	box-shadow: none;
+	border: none;
+	border-radius: none;
+	background-image:url('/layout/images/comentarioh.png') !important;
+	background-repeat:no-repeat;
+	background-position: top left;
+	display: inline-block;
+}
+.comments_default #mostrar img{margin-top:10px;}
+.comments_default #mostrar h3{margin-top:13px;}

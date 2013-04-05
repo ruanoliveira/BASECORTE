@@ -1,0 +1,104 @@
+<!-- { unique_editable_area: Logomarca, logo, 220, 60 } -->
+<!-- { unique_editable_area: Frase Topo, frase, 400, 40 } -->
+<!-- { unique_editable_area: Buscar, buscar, 240, 35 } -->
+<!-- { unique_editable_area: Rodapé, rodape, 960, 0 } -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head>
+	<title contents_from="{ 'Página não encontrada' | append: ' - ' | @site_title }">Título da Página</title>
+	<link rel="stylesheet" href="/layout/css/estilo.css" type="text/css" />
+	<!--[if IE 7]>
+		<link rel="stylesheet"  href="/layout/css/ie7.css" type="text/css" />
+	<![endif]-->
+	<!--[if IE 8]>
+		<link rel="stylesheet"  href="/layout/css/ie8.css" type="text/css" />
+	<![endif]-->
+	<!--[if gte IE 9]>
+		<link rel="stylesheet"  href="/layout/css/ie9.css" type="text/css" />
+	<![endif]-->
+	<link rel="stylesheet" href="/layout/css/firefox.css" type="text/css" />
+	<link rel="icon" type="image/ico" href="/layout/favicon.ico" />
+	<link rel="shortcut icon" type="image/x-icon" href="/layout/favicon.ico" />
+	<script type="text/javascript">
+		jQuery(document).ready(function(){
+			var altura = jQuery('#page-container').height();
+			if(altura < 900){
+				jQuery("#caixa-rodape").addClass("modificado");
+			}
+		});
+	</script>
+</head>
+<body>
+
+<div id="page-wrapper-interna" class="main">
+	<div id="page-container">
+		<div id="page-block">
+
+			<div id="header-wrapper">
+				<div id="header" class="cbf">
+					<div id="logo">
+						<div class="cbf" contents_from="{ @logo }"></div>
+					</div>
+					<div id="frase">
+						<div class="cbf" contents_from="{ @frase }"></div>
+					</div>
+					<div id="buscar">
+						<div class="cbf" contents_from="{ @buscar }"></div>
+					</div>
+				</div>
+				<div id="caixa-menu">
+					<div id="menu"><?= str_replace("\n",'',build_menu_for_2( bimboo_getTopMenu(Array(Array('name'=>'Home','url'=>'/','depth'=>0))) )); ?></div>
+				</div>
+			</div>
+
+			<div id="content-wrapper" class="cbf">
+				<div id="breadcrumbs" class="cbf">
+					<div><div class="breadcrumb"><a href="/">Página Inicial</a> |</div></div>
+					<div class="breadcrumb_current"><span>Pagina não encontrada</span></div>
+				</div>
+				<div id="content-container" class="cbf">
+					<div id="sidebar-block">
+					</div>
+					<div id="content">
+					<div id="content-block">
+						<h1 id="internal-title">Página não encontrada</h1>
+						<div id="content-text" class="cbf">
+							<p>A página que você está tentando acessar não existe ou foi movida temporariamente. O link desta página está quebrado.</p>
+							<br /><br />
+							<p><b>Sugestões:</b>
+							<br /><br />
+								<ul>
+									<li>Verifique o endereço digitado e tente novamente.</li>
+									<li>Tente encontrar o conteúdo em nossa <a href="/">Página Inicial.</a></li>
+									<li>Se você caiu nesta página através de um link, entre em contato para tentar resolver o problema.</li>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+
+			<div id="caixa-rodape">
+				<div id="footer-wrapper" class="cbf">
+					<div id="footer" class="">
+						<div id="rodape" class="">
+							<div contents_from="{ @rodape }"></div>
+						</div>
+					</div>
+					<div id="bimboo">
+						<a href="http://www.bimboo.com.br/" target="_blank">Powered by bimboo © 2013 - Todos os direitos reservados</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<?= core::analytics_code(); ?>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+layouts:
+  - name: Home Page
+    view: index
+  - name: Página com Barra Lateral à Direita
+    view: page
+  - name: Página com Barra Lateral à Esquerda
+    view: page-left
+  - name: Página sem Barra Lateral
+    view: page-inteira
+  - name: Página Simples
+    view: page-simples
+
+comments_default:
+  - name: Padrão
+    file: comments_default
+  - name: Visualização Rotativa
+    file: comments_rotate
+
+block_types:
+  - name: Blog
+    file: new-lista-blog
+    group: Listas Dinâmicas
+  - name: 1 Coluna
+    file: new-lista-grade-1-coluna
+    group: Listas Dinâmicas
+  - name: 2 Colunas
+    file: new-lista-grade-2-colunas
+    group: Listas Dinâmicas
+  - name: 3 Colunas
+    file: new-lista-grade-3-colunas
+    group: Listas Dinâmicas
+  - name: Compacta com Hora
+    file: new-lista-compacta-com-hora
+    group: Listas Dinâmicas
+  - name: Compacta com Data
+    file: new-lista-compacta-com-data
+    group: Listas Dinâmicas
+  - name: Mini Compacta com Hora
+    file: new-lista-mini-compacta-com-hora
+    group: Listas Dinâmicas
+  - name: Mini Compacta com Data
+    file: new-lista-mini-compacta-com-data
+    group: Listas Dinâmicas
+  - name: 3 Colunas (Página Inteira)
+    file: new-lista-grade-3-colunas-full
+    group: Listas Dinâmicas
+  - name: 4 Colunas (Página Inteira)
+    file: new-lista-grade-4-colunas-full
+    group: Listas Dinâmicas
+  - name: Vídeo
+    file: new-lista-video
+    group: Listas Dinâmicas
+  - name: Vertical Título
+    file: new-destaque-vertical
+    group: Blocos Dinâmicos
+  - name: Horizontal Título
+    file: new-destaque-horizontal
+    group: Blocos Dinâmicos
+  - name: Quadrado com Categoria e Título
+    file: new-destaque-quadrado-categoria-titulo
+    group: Blocos Dinâmicos
+  - name: Quadrado com Foto do Autor
+    file: new-destaque-quadrado-foto-autor
+    group: Blocos Dinâmicos
+  - name: Vídeo Vertical
+    file: new-destaque-video-vertical
+    group: Blocos Dinâmicos
+  - name: Vídeo Horizontal
+    file: new-destaque-video-horizontal
+    group: Blocos Dinâmicos
+  - name: Vídeo Quadrado
+    file: new-destaque-video-quadrado
+    group: Blocos Dinâmicos
+  - name: Data e Título
+    file: new-destaque-simples-com-data
+    group: Blocos Dinâmicos
+  - name: Categoria e Título
+    file: new-destaque-simples-com-categoria
+    group: Blocos Dinâmicos
+  - name: Marcador e Título
+    file: new-destaque-simples-com-marcador
+    group: Blocos Dinâmicos
+  - name: Destaque Scroll Horizontal
+    file: new-destaque-scroll-horizontal
+    group: Blocos Dinâmicos
+  - name: Destaque Scroll Vertical
+    file: new-destaque-scroll-vertical
+    group: Blocos Dinâmicos
+  - name: Destaque Rotativo com Thumbs
+    file: new-destaque-rotativo-thumb
+    group: Blocos Dinâmicos
+  - name: Destaque Rotativo Vertical
+    file: new-destaque-rotativo-vertical
+    group: Blocos Dinâmicos
+  - name: Destaque Rotativo Horizontal
+    file: new-destaque-rotativo-horizontal
+    group: Blocos Dinâmicos
+
+box_types:
+  - name: Caixa Padrão
+    file: cx-caixa-padrao
+  - name: Caixa Padrão com borda
+    file: cx-caixa-padrao-com-borda
+  - name: Caixa Mais Lidas
+    file: cx-caixa-mais-lidas
+
+form_types:
+  - name: Padrão
+    file: form-padrao
