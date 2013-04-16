@@ -796,7 +796,7 @@ blockquote h3 {font: normal 20px 'Open Sans';color: #999;}
 /* Navbar */
 .sliderkit {min-height: 320px;height:auto;overflow: visible;}
 .sliderkit-nav {left: 0;bottom: 0;width: 100%;min-height: 320px;height:auto;padding: 0;background: none;top: 0px;margin-left: 0px;position: absolute;}
-.sliderkit-nav-clip ul li {float: left;width: 235px;min-height: 320px;height:auto;margin-right: 0px;text-align: left;background: none;}
+.sliderkit-nav-clip ul li {float: left;width: 225px;min-height: 320px;height:auto;text-align: left;background: none;}
 .sliderkit-nav-clip ul li > a img {display: block;margin: 0;opacity: 1;}
 .sliderkit-nav-clip ul li > a:hover {opacity: 1;}
 .sliderkit-nav-clip ul li p {font-size: 0.9em;}
@@ -832,7 +832,7 @@ blockquote h3 {font: normal 20px 'Open Sans';color: #999;}
 */
 
 li.scroll-vertical-li {padding-right: 0px !important;}
-.sliderkit-nav-clip ul li .scroll-vertical {float: left !important;width: 235px !important;margin-right: 0px !important;text-align: left !important;background: none;}
+.sliderkit-nav-clip ul li .scroll-vertical {float: left !important;width: 225px !important;text-align: left !important;background: none;}
 .sliderkit-nav-clip ul li .scroll-vertical > a img {display: block;margin: 0;opacity: 1;}
 .sliderkit-nav-clip ul li .scroll-vertical > a:hover {opacity: 1;}
 .sliderkit-nav-clip ul li .scroll-vertical p {font-size: 0.9em;}

@@ -22,12 +22,48 @@
 	<link rel="icon" type="image/ico" href="/layout/favicon.ico" />
 	<link rel="shortcut icon" type="image/x-icon" href="/layout/favicon.ico" />
 	<script type="text/javascript">
+	//<![CDATA[
 		jQuery(document).ready(function(){
 			var altura = jQuery('#page-container').height();
 			if(altura < 900){
 				jQuery("#caixa-rodape").addClass("modificado");
 			}
 		});
+		jQuery(document).ready(function(){
+			var originalFontSize = 0;
+			var originalPaddingLeft = 0;
+			var originalPaddingRight = 0;
+			var newFontSize = 0;
+			var newPaddingLeft = 0;
+			var newPaddingRight = 0;
+			
+			while(jQuery('#menu ul').height() > 61){
+				originalPaddingRight = jQuery('#menu li a').css('padding-right');
+				newPaddingRight = parseInt(originalPaddingRight)-1;
+				jQuery('#menu li a').css('padding-right', parseInt(newPaddingRight));
+			
+				if(jQuery('#menu ul').height() > 61){
+					originalPaddingLeft = jQuery('#menu li:nth-of-type(2) a').css('padding-left');
+					newPaddingLeft = parseInt(originalPaddingLeft)-1;
+					jQuery('#menu li a').css('padding-left', parseInt(newPaddingLeft));
+				}
+				
+				if(jQuery('#menu ul').height() > 61){
+					originalFontSize = jQuery('#menu li a').css('font-size');
+					newFontSize = parseInt(originalFontSize)-1;
+					if(newFontSize >= 12){
+						jQuery('#menu li a').css('font-size', parseInt(newFontSize));
+					}
+					if((newFontSize == 12)){
+						jQuery('#menu li a span').mouseover().css('padding-bottom', 22);
+					}
+					if((newFontSize == 13) || (newFontSize == 14)){
+						jQuery('#menu li a span').mouseover().css('padding-bottom', 21);
+					}
+				}
+			}
+		});
+		//]]>
 	</script>
 </head>
 <body>
