@@ -113,8 +113,11 @@
 							<? } ?>
 						</div>
 						<div id="barra-lateral">
-							<div class="barra-lateral-exclusiva" contents_from="{ @sidebar_area }"></div>
+							<?if($sidebar_area != ""){?>
+								<div class="barra-lateral-exclusiva" contents_from="{ @sidebar_area }"></div>
+							<?}else{?>
 							<div class="barra-lateral-recursiva" contents_from="{ @sra_barra_lateral }"></div>
+							<?}?>
 						</div>
 					</div>
 					<div id="content" class="fl">
